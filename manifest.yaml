@@ -1,0 +1,31 @@
+apiVersion: v1
+kind: Plugin
+metadata:
+  author: sheetung
+  name: meme-plugin-api
+  repository: 'https://github.com/sheetung/memes-api-plugin'
+  version: 0.5.8
+  description:
+    en_US: For LangBot meme generator plugin, API version
+    zh_Hans: 用于LangBot表情包制作插件，api 版本
+  label:
+    en_US: meme-plugin-api
+    zh_Hans: meme表情包生成
+  icon: assets/icon.png
+spec:
+  config:
+    - name: memeurl
+      type: string
+      label:
+        en_US: 'Meme api URL'
+        zh_Hans: '表情包API URL'
+      required: true
+      default: 'http://127.0.0.1:2323'
+  components:
+    EventListener:
+      fromDirs:
+      - path: components/event_listener/
+execution:
+  python:
+    path: main.py
+    attr: memeDockerForLangBot

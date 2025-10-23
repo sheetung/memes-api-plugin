@@ -1,0 +1,3 @@
+langbot-plugin
+httpx
+pyyaml

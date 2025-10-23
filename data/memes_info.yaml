@@ -1,0 +1,7234 @@
+5000choyen:
+  date_created: '2022-10-29T00:00:00'
+  date_modified: '2024-11-02T00:00:00'
+  keywords:
+  - 5000兆
+  params_type:
+    args_type: null
+    default_texts:
+    - 我去
+    - 洛天依
+    max_images: 0
+    max_texts: 2
+    min_images: 0
+    min_texts: 2
+  shortcuts: []
+  tags: []
+abstinence:
+  date_created: '2024-12-13T00:00:00'
+  date_modified: '2024-12-14T00:00:00'
+  keywords:
+  - 戒导
+  params_type:
+    args_type:
+      args_examples: []
+      args_model:
+        $defs:
+          UserInfo:
+            properties:
+              gender:
+                default: unknown
+                enum:
+                - male
+                - female
+                - unknown
+                title: Gender
+                type: string
+              name:
+                default: ''
+                title: Name
+                type: string
+            title: UserInfo
+            type: object
+        properties:
+          name:
+            default: ''
+            description: 指定名字
+            title: Name
+            type: string
+          time:
+            default: ''
+            description: 指定时间
+            title: Time
+            type: string
+          user_infos:
+            default: []
+            items:
+              $ref: '#/$defs/UserInfo'
+            title: User Infos
+            type: array
+        title: Model
+        type: object
+      parser_options:
+      - action: null
+        args:
+        - default: null
+          flags: null
+          name: time
+          value: str
+        compact: false
+        default: null
+        dest: null
+        help_text: 指定时间
+        names:
+        - -t
+        - --time
+      - action: null
+        args:
+        - default: null
+          flags: null
+          name: name
+          value: str
+        compact: false
+        default: null
+        dest: null
+        help_text: 指定名字
+        names:
+        - -n
+        - --name
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+ace_attorney_dialog:
+  date_created: '2024-05-03T00:00:00'
+  date_modified: '2024-05-03T00:00:00'
+  keywords:
+  - 逆转裁判气泡
+  params_type:
+    args_type: null
+    default_texts:
+    - 表情包制作
+    max_images: 0
+    max_texts: 1
+    min_images: 0
+    min_texts: 1
+  shortcuts: []
+  tags: []
+acg_entrance:
+  date_created: '2023-03-30T00:00:00'
+  date_modified: '2023-03-30T00:00:00'
+  keywords:
+  - 二次元入口
+  params_type:
+    args_type: null
+    default_texts:
+    - 走，跟我去二次元吧
+    max_images: 1
+    max_texts: 1
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+add_chaos:
+  date_created: '2023-06-21T00:00:00'
+  date_modified: '2023-06-21T00:00:00'
+  keywords:
+  - 添乱
+  - 给社会添乱
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+addiction:
+  date_created: '2022-08-17T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 上瘾
+  - 毒瘾发作
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 1
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+alike:
+  date_created: '2022-01-02T00:00:00'
+  date_modified: '2023-02-22T00:00:00'
+  keywords:
+  - 一样
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+alipay:
+  date_created: '2024-10-30T00:00:00'
+  date_modified: '2024-10-30T00:00:00'
+  keywords:
+  - 支付宝支付
+  params_type:
+    args_type:
+      args_examples: []
+      args_model:
+        $defs:
+          UserInfo:
+            properties:
+              gender:
+                default: unknown
+                enum:
+                - male
+                - female
+                - unknown
+                title: Gender
+                type: string
+              name:
+                default: ''
+                title: Name
+                type: string
+            title: UserInfo
+            type: object
+        properties:
+          message:
+            default: ''
+            description: 二维码内容
+            title: Message
+            type: string
+          user_infos:
+            default: []
+            items:
+              $ref: '#/$defs/UserInfo'
+            title: User Infos
+            type: array
+        title: Model
+        type: object
+      parser_options:
+      - action: null
+        args:
+        - default: null
+          flags: null
+          name: message
+          value: str
+        compact: false
+        default: null
+        dest: null
+        help_text: 二维码内容
+        names:
+        - -m
+        - --message
+    default_texts: []
+    max_images: 1
+    max_texts: 1
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+always:
+  date_created: '2021-12-02T00:00:00'
+  date_modified: '2024-08-09T00:00:00'
+  keywords:
+  - 一直
+  params_type:
+    args_type:
+      args_examples:
+      - mode: normal
+        user_infos: []
+      - mode: circle
+        user_infos: []
+      - mode: loop
+        user_infos: []
+      args_model:
+        $defs:
+          UserInfo:
+            properties:
+              gender:
+                default: unknown
+                enum:
+                - male
+                - female
+                - unknown
+                title: Gender
+                type: string
+              name:
+                default: ''
+                title: Name
+                type: string
+            title: UserInfo
+            type: object
+        properties:
+          mode:
+            default: normal
+            description: 生成模式，包含 normal、loop、circle
+            enum:
+            - normal
+            - loop
+            - circle
+            title: Mode
+            type: string
+          user_infos:
+            default: []
+            items:
+              $ref: '#/$defs/UserInfo'
+            title: User Infos
+            type: array
+        title: Model
+        type: object
+      parser_options:
+      - action: null
+        args:
+        - default: null
+          flags: null
+          name: mode
+          value: str
+        compact: false
+        default: null
+        dest: null
+        help_text: 生成模式，包含 normal、loop、circle
+        names:
+        - --mode
+      - action:
+          type: 0
+          value: circle
+        args: null
+        compact: false
+        default: null
+        dest: mode
+        help_text: 套娃模式
+        names:
+        - --circle
+        - 套娃
+      - action:
+          type: 0
+          value: loop
+        args: null
+        compact: false
+        default: null
+        dest: mode
+        help_text: 循环模式
+        names:
+        - --loop
+        - 循环
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts:
+  - args:
+    - --loop
+    humanized: null
+    key: 一直一直
+  tags: []
+always_like:
+  date_created: '2022-03-14T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 我永远喜欢
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 6
+    max_texts: 6
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+anti_kidnap:
+  date_created: '2022-07-09T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 防诱拐
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+anya_suki:
+  date_created: '2022-05-10T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 阿尼亚喜欢
+  params_type:
+    args_type: null
+    default_texts:
+    - 阿尼亚喜欢这个
+    max_images: 1
+    max_texts: 1
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags:
+  - 间谍过家家
+  - 阿尼亚·福杰
+applaud:
+  date_created: '2023-01-08T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 鼓掌
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+arona_throw:
+  date_created: '2024-12-10T00:00:00'
+  date_modified: '2024-12-10T00:00:00'
+  keywords:
+  - 阿罗娜扔
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags:
+  - 碧蓝档案
+  - 阿罗娜
+  - 蔚蓝档案
+ascension:
+  date_created: '2022-10-17T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 升天
+  params_type:
+    args_type: null
+    default_texts:
+    - 学的是机械
+    max_images: 0
+    max_texts: 1
+    min_images: 0
+    min_texts: 1
+  shortcuts: []
+  tags: []
+ask:
+  date_created: '2022-02-23T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 问问
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 1
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+atri_pillow:
+  date_created: '2024-08-12T00:00:00'
+  date_modified: '2024-08-15T00:00:00'
+  keywords:
+  - 亚托莉枕头
+  params_type:
+    args_type:
+      args_examples:
+      - mode: 'yes'
+        user_infos: []
+      - mode: 'no'
+        user_infos: []
+      args_model:
+        $defs:
+          UserInfo:
+            properties:
+              gender:
+                default: unknown
+                enum:
+                - male
+                - female
+                - unknown
+                title: Gender
+                type: string
+              name:
+                default: ''
+                title: Name
+                type: string
+            title: UserInfo
+            type: object
+        properties:
+          mode:
+            default: random
+            description: yes or no
+            enum:
+            - 'yes'
+            - 'no'
+            - random
+            title: Mode
+            type: string
+          user_infos:
+            default: []
+            items:
+              $ref: '#/$defs/UserInfo'
+            title: User Infos
+            type: array
+        title: Model
+        type: object
+      parser_options:
+      - action:
+          type: 0
+          value: 'yes'
+        args: null
+        compact: false
+        default: null
+        dest: mode
+        help_text: null
+        names:
+        - -y
+        - --yes
+      - action:
+          type: 0
+          value: 'no'
+        args: null
+        compact: false
+        default: null
+        dest: mode
+        help_text: null
+        names:
+        - -n
+        - --no
+    default_texts:
+    - ATRI
+    max_images: 0
+    max_texts: 1
+    min_images: 0
+    min_texts: 1
+  shortcuts: []
+  tags:
+  - ATRI
+  - 亚托莉
+  - 萝卜子
+ayachi_holdsign:
+  date_created: '2025-04-28T00:00:00'
+  date_modified: '2025-04-28T00:00:00'
+  keywords:
+  - 宁宁举牌
+  params_type:
+    args_type: null
+    default_texts:
+    - 我控制不住自己啊
+    max_images: 0
+    max_texts: 1
+    min_images: 0
+    min_texts: 1
+  shortcuts: []
+  tags:
+  - 绫地宁宁
+  - 柚子社
+  - 魔女的夜宴
+ba_say:
+  date_created: '2024-12-12T00:00:00'
+  date_modified: '2025-01-19T00:00:00'
+  keywords:
+  - ba说
+  params_type:
+    args_type:
+      args_examples:
+      - character: 1
+        position: right
+        user_infos: []
+      - character: 2
+        position: right
+        user_infos: []
+      - character: 3
+        position: right
+        user_infos: []
+      - character: 4
+        position: right
+        user_infos: []
+      - character: 5
+        position: right
+        user_infos: []
+      - character: 6
+        position: right
+        user_infos: []
+      - character: 7
+        position: right
+        user_infos: []
+      args_model:
+        $defs:
+          UserInfo:
+            properties:
+              gender:
+                default: unknown
+                enum:
+                - male
+                - female
+                - unknown
+                title: Gender
+                type: string
+              name:
+                default: ''
+                title: Name
+                type: string
+            title: UserInfo
+            type: object
+        properties:
+          character:
+            default: 0
+            description: 角色编号：1、心奈，2、爱丽丝，3、泉奈，4、key，5、玛丽，6、濑名，7、优香
+            title: Character
+            type: integer
+          position:
+            default: random
+            description: 消息框的位置，包含 left、right、random
+            enum:
+            - left
+            - right
+            - random
+            title: Position
+            type: string
+          user_infos:
+            default: []
+            items:
+              $ref: '#/$defs/UserInfo'
+            title: User Infos
+            type: array
+        title: Model
+        type: object
+      parser_options:
+      - action: null
+        args:
+        - default: null
+          flags: null
+          name: character
+          value: str
+        compact: false
+        default: null
+        dest: null
+        help_text: 角色编号：1、心奈，2、爱丽丝，3、泉奈，4、key，5、玛丽，6、濑名，7、优香
+        names:
+        - -c
+        - --character
+      - action: null
+        args:
+        - default: null
+          flags: null
+          name: position
+          value: str
+        compact: false
+        default: null
+        dest: null
+        help_text: 消息框的位置，包含 left、right、random
+        names:
+        - -p
+        - --position
+      - action:
+          type: 0
+          value: left
+        args: null
+        compact: false
+        default: null
+        dest: position
+        help_text: null
+        names:
+        - --left
+        - 左
+      - action:
+          type: 0
+          value: right
+        args: null
+        compact: false
+        default: null
+        dest: position
+        help_text: null
+        names:
+        - --right
+        - 右
+    default_texts:
+    - 那我问你
+    max_images: 0
+    max_texts: 1
+    min_images: 0
+    min_texts: 1
+  shortcuts:
+  - args:
+    - --character
+    - '1'
+    humanized: null
+    key: 心奈说
+  - args:
+    - --character
+    - '2'
+    humanized: null
+    key: 爱丽丝说
+  - args:
+    - --character
+    - '3'
+    humanized: null
+    key: 泉奈说
+  - args:
+    - --character
+    - '4'
+    humanized: null
+    key: key说
+  - args:
+    - --character
+    - '5'
+    humanized: null
+    key: 玛丽说
+  - args:
+    - --character
+    - '6'
+    humanized: null
+    key: 濑名说
+  - args:
+    - --character
+    - '7'
+    humanized: null
+    key: 优香说
+  tags:
+  - 碧蓝档案
+  - 早濑优香
+  - 蔚蓝档案
+  - 伊落玛丽
+  - 春原心菜
+  - 春原心奈
+  - key
+  - 天童爱丽丝
+  - 忍忍
+  - 邮箱
+  - 冰室濑名
+  - 久田泉奈
+back_to_work:
+  date_created: '2022-03-10T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 继续干活
+  - 打工人
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+backflip:
+  date_created: '2025-06-29T00:00:00'
+  date_modified: '2025-06-29T00:00:00'
+  keywords:
+  - 后空翻
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+bad_news:
+  date_created: '2022-10-15T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 悲报
+  params_type:
+    args_type: null
+    default_texts:
+    - 喜报
+    max_images: 0
+    max_texts: 1
+    min_images: 0
+    min_texts: 1
+  shortcuts: []
+  tags: []
+beat_head:
+  date_created: '2023-03-08T00:00:00'
+  date_modified: '2023-03-08T00:00:00'
+  keywords:
+  - 拍头
+  params_type:
+    args_type: null
+    default_texts:
+    - 怎么说话的你
+    max_images: 1
+    max_texts: 1
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+beat_up:
+  date_created: '2024-04-09T00:00:00'
+  date_modified: '2024-04-09T00:00:00'
+  keywords:
+  - 揍
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 2
+    max_texts: 0
+    min_images: 2
+    min_texts: 0
+  shortcuts: []
+  tags:
+  - 汤姆
+  - 猫和老鼠
+  - 杰瑞
+behead:
+  date_created: '2023-07-01T00:00:00'
+  date_modified: '2023-07-01T00:00:00'
+  keywords:
+  - 砍头
+  - 斩首
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+bite:
+  date_created: '2022-02-15T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 啃
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+blamed_mahiro:
+  date_created: '2024-08-26T00:00:00'
+  date_modified: '2024-08-26T00:00:00'
+  keywords:
+  - 真寻挨骂
+  params_type:
+    args_type: null
+    default_texts:
+    - 傻逼
+    max_images: 0
+    max_texts: 1
+    min_images: 0
+    min_texts: 1
+  shortcuts: []
+  tags:
+  - 绪山真寻
+  - 别当欧尼酱了
+blood_pressure:
+  date_created: '2022-08-22T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 高血压
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+bluearchive:
+  date_created: '2023-10-14T00:00:00'
+  date_modified: '2024-11-02T00:00:00'
+  keywords:
+  - 蔚蓝档案标题
+  - batitle
+  params_type:
+    args_type: null
+    default_texts:
+    - Blue
+    - Archive
+    max_images: 0
+    max_texts: 2
+    min_images: 0
+    min_texts: 2
+  shortcuts: []
+  tags:
+  - 蔚蓝档案
+  - 碧蓝档案
+bocchi_draft:
+  date_created: '2022-11-29T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 波奇手稿
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags:
+  - 波奇酱
+  - 孤独摇滚
+  - 后藤独
+  - 后藤一里
+bronya_holdsign:
+  date_created: '2022-10-27T00:00:00'
+  date_modified: '2023-03-30T00:00:00'
+  keywords:
+  - 布洛妮娅举牌
+  - 大鸭鸭举牌
+  params_type:
+    args_type: null
+    default_texts:
+    - V我50
+    max_images: 0
+    max_texts: 1
+    min_images: 0
+    min_texts: 1
+  shortcuts: []
+  tags:
+  - 崩坏3
+  - 米哈游
+  - 布洛妮娅·扎伊切克
+bubble_tea:
+  date_created: '2022-08-22T00:00:00'
+  date_modified: '2023-03-10T00:00:00'
+  keywords:
+  - 奶茶
+  params_type:
+    args_type:
+      args_examples:
+      - position: right
+        user_infos: []
+      - position: left
+        user_infos: []
+      - position: both
+        user_infos: []
+      args_model:
+        $defs:
+          UserInfo:
+            properties:
+              gender:
+                default: unknown
+                enum:
+                - male
+                - female
+                - unknown
+                title: Gender
+                type: string
+              name:
+                default: ''
+                title: Name
+                type: string
+            title: UserInfo
+            type: object
+        properties:
+          position:
+            default: right
+            description: 奶茶的位置，包含 right、left、both
+            enum:
+            - right
+            - left
+            - both
+            title: Position
+            type: string
+          user_infos:
+            default: []
+            items:
+              $ref: '#/$defs/UserInfo'
+            title: User Infos
+            type: array
+        title: Model
+        type: object
+      parser_options:
+      - action: null
+        args:
+        - default: null
+          flags: null
+          name: position
+          value: str
+        compact: false
+        default: null
+        dest: null
+        help_text: 奶茶的位置，包含 right、left、both
+        names:
+        - -p
+        - --position
+      - action:
+          type: 0
+          value: right
+        args: null
+        compact: false
+        default: null
+        dest: position
+        help_text: null
+        names:
+        - --right
+        - 右手
+      - action:
+          type: 0
+          value: left
+        args: null
+        compact: false
+        default: null
+        dest: position
+        help_text: null
+        names:
+        - --left
+        - 左手
+      - action:
+          type: 0
+          value: both
+        args: null
+        compact: false
+        default: null
+        dest: position
+        help_text: null
+        names:
+        - --both
+        - 双手
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+call_110:
+  date_created: '2022-08-26T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 遇到困难请拨打
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 2
+    max_texts: 0
+    min_images: 2
+    min_texts: 0
+  shortcuts: []
+  tags: []
+can_can_need:
+  date_created: '2023-03-16T00:00:00'
+  date_modified: '2023-03-16T00:00:00'
+  keywords:
+  - 看看你的
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 2
+    max_texts: 0
+    min_images: 2
+    min_texts: 0
+  shortcuts: []
+  tags: []
+capoo_draw:
+  date_created: '2023-03-31T00:00:00'
+  date_modified: '2023-04-28T00:00:00'
+  keywords:
+  - 咖波画
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags:
+  - 咖波
+  - 猫猫虫
+capoo_point:
+  date_created: '2024-10-24T00:00:00'
+  date_modified: '2024-10-24T00:00:00'
+  keywords:
+  - 咖波指
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags:
+  - 咖波
+  - 猫猫虫
+capoo_rip:
+  date_created: '2023-04-17T00:00:00'
+  date_modified: '2023-04-28T00:00:00'
+  keywords:
+  - 咖波撕
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags:
+  - 咖波
+  - 猫猫虫
+capoo_rub:
+  date_created: '2022-11-29T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 咖波蹭
+  - 咖波贴
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags:
+  - 咖波
+  - 猫猫虫
+capoo_say:
+  date_created: '2023-03-28T00:00:00'
+  date_modified: '2023-03-30T00:00:00'
+  keywords:
+  - 咖波说
+  params_type:
+    args_type: null
+    default_texts:
+    - 寄
+    max_images: 0
+    max_texts: 10
+    min_images: 0
+    min_texts: 1
+  shortcuts: []
+  tags:
+  - 咖波
+  - 猫猫虫
+capoo_stew:
+  date_created: '2024-08-23T00:00:00'
+  date_modified: '2024-08-23T00:00:00'
+  keywords:
+  - 咖波炖
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags:
+  - 咖波
+  - 猫猫虫
+capoo_strike:
+  date_created: '2023-03-28T00:00:00'
+  date_modified: '2023-03-28T00:00:00'
+  keywords:
+  - 咖波撞
+  - 咖波头槌
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags:
+  - 咖波
+  - 猫猫虫
+captain:
+  date_created: '2022-10-09T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 舰长
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 5
+    max_texts: 0
+    min_images: 2
+    min_texts: 0
+  shortcuts: []
+  tags:
+  - 崩坏3
+  - 舰长
+  - 休伯利安号
+  - 米哈游
+caused_by_this:
+  date_created: '2024-11-18T00:00:00'
+  date_modified: '2024-11-22T00:00:00'
+  keywords:
+  - 这个引起的
+  params_type:
+    args_type: null
+    default_texts:
+    - 心脏病 高血压 心律不齐 心肌梗塞 失眠 脱发 呼吸困难 胸闷气短 缺氧 躁郁 焦虑 脑供血不足 心慌心悸 心脑血管炸裂
+    max_images: 1
+    max_texts: 1
+    min_images: 1
+    min_texts: 0
+  shortcuts:
+  - args:
+    - '{text}'
+    humanized: 你的xx主要都是由这个引起的
+    key: 你的(?P<text>.+?)(?:主要)?都?是由?这个引起的
+  tags: []
+certificate:
+  date_created: '2023-12-03T00:00:00'
+  date_modified: '2023-12-03T00:00:00'
+  keywords:
+  - 奖状
+  - 证书
+  params_type:
+    args_type:
+      args_examples: []
+      args_model:
+        $defs:
+          UserInfo:
+            properties:
+              gender:
+                default: unknown
+                enum:
+                - male
+                - female
+                - unknown
+                title: Gender
+                type: string
+              name:
+                default: ''
+                title: Name
+                type: string
+            title: UserInfo
+            type: object
+        properties:
+          time:
+            default: ''
+            description: 指定时间
+            title: Time
+            type: string
+          user_infos:
+            default: []
+            items:
+              $ref: '#/$defs/UserInfo'
+            title: User Infos
+            type: array
+        title: Model
+        type: object
+      parser_options:
+      - action: null
+        args:
+        - default: null
+          flags: null
+          name: time
+          value: str
+        compact: false
+        default: null
+        dest: null
+        help_text: 指定时间
+        names:
+        - -t
+        - --time
+    default_texts:
+    - 小王
+    - 优秀学生
+    - 一年一班
+    max_images: 0
+    max_texts: 4
+    min_images: 0
+    min_texts: 3
+  shortcuts: []
+  tags: []
+chanshenzi:
+  date_created: '2021-12-24T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 馋身子
+  params_type:
+    args_type: null
+    default_texts:
+    - 你那叫喜欢吗？
+    - 你那是馋她身子
+    - 你下贱！
+    max_images: 0
+    max_texts: 3
+    min_images: 0
+    min_texts: 3
+  shortcuts: []
+  tags: []
+charpic:
+  date_created: '2022-07-21T00:00:00'
+  date_modified: '2024-11-01T00:00:00'
+  keywords:
+  - 字符画
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+chase_train:
+  date_created: '2023-01-08T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 追列车
+  - 追火车
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+china_flag:
+  date_created: '2022-03-09T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 国旗
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+chino_throw:
+  date_created: '2025-05-23T00:00:00'
+  date_modified: '2025-05-23T00:00:00'
+  keywords:
+  - 智乃扔
+  - 智乃抛
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags:
+  - 香风智乃
+clauvio_twist:
+  date_created: '2024-08-31T00:00:00'
+  date_modified: '2024-08-31T00:00:00'
+  keywords:
+  - 鼠鼠搓
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+clown:
+  date_created: '2023-10-14T00:00:00'
+  date_modified: '2023-10-14T00:00:00'
+  keywords:
+  - 小丑
+  params_type:
+    args_type:
+      args_examples:
+      - person: false
+        user_infos: []
+      - person: true
+        user_infos: []
+      args_model:
+        $defs:
+          UserInfo:
+            properties:
+              gender:
+                default: unknown
+                enum:
+                - male
+                - female
+                - unknown
+                title: Gender
+                type: string
+              name:
+                default: ''
+                title: Name
+                type: string
+            title: UserInfo
+            type: object
+        properties:
+          person:
+            default: false
+            description: 是否使用爷爷头轮廓
+            title: Person
+            type: boolean
+          user_infos:
+            default: []
+            items:
+              $ref: '#/$defs/UserInfo'
+            title: User Infos
+            type: array
+        title: Model
+        type: object
+      parser_options:
+      - action:
+          type: 0
+          value: true
+        args: null
+        compact: false
+        default: false
+        dest: null
+        help_text: 是否使用爷爷头轮廓
+        names:
+        - --person
+        - 爷
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+clown_mask:
+  date_created: '2024-09-20T00:00:00'
+  date_modified: '2024-09-20T00:00:00'
+  keywords:
+  - 小丑面具
+  params_type:
+    args_type:
+      args_examples:
+      - mode: front
+        user_infos: []
+      - mode: behind
+        user_infos: []
+      args_model:
+        $defs:
+          UserInfo:
+            properties:
+              gender:
+                default: unknown
+                enum:
+                - male
+                - female
+                - unknown
+                title: Gender
+                type: string
+              name:
+                default: ''
+                title: Name
+                type: string
+            title: UserInfo
+            type: object
+        properties:
+          mode:
+            default: front
+            description: 小丑在前/后，front/behind
+            enum:
+            - front
+            - behind
+            title: Mode
+            type: string
+          user_infos:
+            default: []
+            items:
+              $ref: '#/$defs/UserInfo'
+            title: User Infos
+            type: array
+        title: Model
+        type: object
+      parser_options:
+      - action: null
+        args:
+        - default: null
+          flags: null
+          name: mode
+          value: str
+        compact: false
+        default: null
+        dest: null
+        help_text: 小丑在前/后，front/behind
+        names:
+        - --mode
+      - action:
+          type: 0
+          value: front
+        args: null
+        compact: false
+        default: null
+        dest: mode
+        help_text: 小丑在前
+        names:
+        - --front
+        - 前
+      - action:
+          type: 0
+          value: behind
+        args: null
+        compact: false
+        default: null
+        dest: mode
+        help_text: 小丑在后
+        names:
+        - --behind
+        - 后
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+confuse:
+  date_created: '2022-09-04T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 迷惑
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+coupon:
+  date_created: '2022-03-12T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 兑换券
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 1
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+cover_face:
+  date_created: '2022-03-30T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 捂脸
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+crawl:
+  date_created: '2021-05-05T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 爬
+  params_type:
+    args_type:
+      args_examples: []
+      args_model:
+        $defs:
+          UserInfo:
+            properties:
+              gender:
+                default: unknown
+                enum:
+                - male
+                - female
+                - unknown
+                title: Gender
+                type: string
+              name:
+                default: ''
+                title: Name
+                type: string
+            title: UserInfo
+            type: object
+        properties:
+          number:
+            default: 0
+            description: 图片编号，范围为 1~92
+            title: Number
+            type: integer
+          user_infos:
+            default: []
+            items:
+              $ref: '#/$defs/UserInfo'
+            title: User Infos
+            type: array
+        title: Model
+        type: object
+      parser_options:
+      - action: null
+        args:
+        - default: null
+          flags: null
+          name: number
+          value: int
+        compact: false
+        default: null
+        dest: null
+        help_text: 图片编号，范围为 1~92
+        names:
+        - -n
+        - --number
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+cyan:
+  date_created: '2022-03-18T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 群青
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+daynight:
+  date_created: '2023-10-03T00:00:00'
+  date_modified: '2023-10-03T00:00:00'
+  keywords:
+  - 白天黑夜
+  - 白天晚上
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 2
+    max_texts: 0
+    min_images: 2
+    min_texts: 0
+  shortcuts: []
+  tags: []
+decent_kiss:
+  date_created: '2022-04-14T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 像样的亲亲
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+dianzhongdian:
+  date_created: '2022-03-12T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 入典
+  - 典中典
+  - 黑白草图
+  params_type:
+    args_type: null
+    default_texts:
+    - 救命啊
+    max_images: 1
+    max_texts: 2
+    min_images: 1
+    min_texts: 1
+  shortcuts: []
+  tags: []
+dinosaur:
+  date_created: '2023-01-06T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 恐龙
+  - 小恐龙
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+distracted:
+  date_created: '2022-04-20T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 注意力涣散
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags:
+  - 明日方舟
+divorce:
+  date_created: '2023-01-07T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 离婚协议
+  - 离婚申请
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+do:
+  date_created: '2023-03-07T00:00:00'
+  date_modified: '2023-03-07T00:00:00'
+  keywords:
+  - 撅
+  - 狠狠地撅
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 2
+    max_texts: 0
+    min_images: 2
+    min_texts: 0
+  shortcuts: []
+  tags: []
+dog_dislike:
+  date_created: '2023-11-16T00:00:00'
+  date_modified: '2023-11-16T00:00:00'
+  keywords:
+  - 狗都不玩
+  params_type:
+    args_type:
+      args_examples:
+      - circle: false
+        user_infos: []
+      - circle: true
+        user_infos: []
+      args_model:
+        $defs:
+          UserInfo:
+            properties:
+              gender:
+                default: unknown
+                enum:
+                - male
+                - female
+                - unknown
+                title: Gender
+                type: string
+              name:
+                default: ''
+                title: Name
+                type: string
+            title: UserInfo
+            type: object
+        properties:
+          circle:
+            default: false
+            description: 是否将图片变为圆形
+            title: Circle
+            type: boolean
+          user_infos:
+            default: []
+            items:
+              $ref: '#/$defs/UserInfo'
+            title: User Infos
+            type: array
+        title: Model
+        type: object
+      parser_options:
+      - action:
+          type: 0
+          value: true
+        args: null
+        compact: false
+        default: false
+        dest: null
+        help_text: 是否将图片变为圆形
+        names:
+        - --circle
+        - 圆
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+dog_of_vtb:
+  date_created: '2023-04-18T00:00:00'
+  date_modified: '2023-04-18T00:00:00'
+  keywords:
+  - 管人痴
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+dont_go_near:
+  date_created: '2022-01-02T00:00:00'
+  date_modified: '2023-04-20T00:00:00'
+  keywords:
+  - 不要靠近
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+dont_press:
+  date_created: '2021-05-04T00:00:00'
+  date_modified: '2025-10-23T13:37:46.348682'
+  keywords:
+  - 不要按
+  params_type:
+    args_type: null
+    default_texts:
+    - 世界毁灭
+    max_images: 0
+    max_texts: 1
+    min_images: 0
+    min_texts: 1
+  shortcuts: []
+  tags: []
+dont_touch:
+  date_created: '2023-04-27T00:00:00'
+  date_modified: '2023-04-27T00:00:00'
+  keywords:
+  - 别碰
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+douyin:
+  date_created: '2022-10-29T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - douyin
+  params_type:
+    args_type: null
+    default_texts:
+    - douyin
+    max_images: 0
+    max_texts: 1
+    min_images: 0
+    min_texts: 1
+  shortcuts: []
+  tags: []
+eat:
+  date_created: '2022-02-15T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 吃
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+empathy:
+  date_created: '2023-04-27T00:00:00'
+  date_modified: '2023-04-27T00:00:00'
+  keywords:
+  - 换位思考
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+emperor_dragon:
+  date_created: '2024-10-30T00:00:00'
+  date_modified: '2024-10-30T00:00:00'
+  keywords:
+  - 皇帝龙图
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 0
+    max_texts: 1
+    min_images: 0
+    min_texts: 1
+  shortcuts: []
+  tags: []
+erised_mirror:
+  date_created: '2024-08-31T00:00:00'
+  date_modified: '2024-08-31T00:00:00'
+  keywords:
+  - 意若思镜
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags:
+  - 哈利·波特
+fade_away:
+  date_created: '2024-08-20T00:00:00'
+  date_modified: '2024-08-21T00:00:00'
+  keywords:
+  - 灰飞烟灭
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+fanatic:
+  date_created: '2021-12-15T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 狂爱
+  - 狂粉
+  params_type:
+    args_type: null
+    default_texts:
+    - 洛天依
+    max_images: 0
+    max_texts: 1
+    min_images: 0
+    min_texts: 1
+  shortcuts: []
+  tags: []
+father_work:
+  date_created: '2024-05-12T00:00:00'
+  date_modified: '2024-05-16T00:00:00'
+  keywords:
+  - 闭嘴
+  - 我爸爸
+  params_type:
+    args_type: null
+    default_texts:
+    - 此处添加文字
+    max_images: 1
+    max_texts: 1
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+fencing:
+  date_created: '2022-10-01T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 击剑
+  - 🤺
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 2
+    max_texts: 0
+    min_images: 2
+    min_texts: 0
+  shortcuts: []
+  tags: []
+fight_with_sunuo:
+  date_created: '2024-04-03T00:00:00'
+  date_modified: '2024-05-25T00:00:00'
+  keywords:
+  - 我打宿傩
+  - 我打宿傩吗
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags:
+  - 咒术回战
+  - 两面宿傩
+fill_head:
+  date_created: '2023-06-03T00:00:00'
+  date_modified: '2023-06-03T00:00:00'
+  keywords:
+  - 满脑子
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 1
+    min_images: 1
+    min_texts: 0
+  shortcuts:
+  - args:
+    - '{name}'
+    humanized: 满脑子都是xx
+    key: 满脑子都是(?P<name>\S+)
+  tags: []
+find_chips:
+  date_created: '2022-10-26T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 整点薯条
+  params_type:
+    args_type: null
+    default_texts:
+    - 我们要飞向何方
+    - 我打算待会去码头整点薯条
+    - 我说的是归根结底，活着是为了什么
+    - 为了待会去码头整点薯条
+    max_images: 0
+    max_texts: 4
+    min_images: 0
+    min_texts: 4
+  shortcuts: []
+  tags: []
+firefly_holdsign:
+  date_created: '2024-05-05T00:00:00'
+  date_modified: '2024-05-06T00:00:00'
+  keywords:
+  - 流萤举牌
+  params_type:
+    args_type:
+      args_examples: []
+      args_model:
+        $defs:
+          UserInfo:
+            properties:
+              gender:
+                default: unknown
+                enum:
+                - male
+                - female
+                - unknown
+                title: Gender
+                type: string
+              name:
+                default: ''
+                title: Name
+                type: string
+            title: UserInfo
+            type: object
+        properties:
+          number:
+            default: 0
+            description: 图片编号，范围为 1~21
+            title: Number
+            type: integer
+          user_infos:
+            default: []
+            items:
+              $ref: '#/$defs/UserInfo'
+            title: User Infos
+            type: array
+        title: Model
+        type: object
+      parser_options:
+      - action: null
+        args:
+        - default: null
+          flags: null
+          name: number
+          value: int
+        compact: false
+        default: null
+        dest: null
+        help_text: 图片编号，范围为 1~21
+        names:
+        - -n
+        - --number
+    default_texts:
+    - 我超爱你
+    max_images: 0
+    max_texts: 1
+    min_images: 0
+    min_texts: 1
+  shortcuts: []
+  tags:
+  - 流萤
+  - 米哈游
+  - 崩坏：星穹铁道
+flash_blind:
+  date_created: '2023-05-05T00:00:00'
+  date_modified: '2023-05-05T00:00:00'
+  keywords:
+  - 闪瞎
+  params_type:
+    args_type: null
+    default_texts:
+    - 闪瞎你们的狗眼
+    max_images: 1
+    max_texts: 1
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+fleshlight:
+  date_created: '2023-04-29T00:00:00'
+  date_modified: '2023-04-29T00:00:00'
+  keywords:
+  - 飞机杯
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+flick:
+  date_created: '2025-06-22T00:00:00'
+  date_modified: '2025-06-22T00:00:00'
+  keywords:
+  - 弹
+  - 脑瓜崩
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+flush:
+  date_created: '2024-09-03T00:00:00'
+  date_modified: '2024-09-03T00:00:00'
+  keywords:
+  - 红温
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+fogging:
+  date_created: '2025-03-16T00:00:00'
+  date_modified: '2025-03-16T00:00:00'
+  keywords:
+  - 回南天
+  - 水雾
+  params_type:
+    args_type: null
+    default_texts:
+    - 兄弟，回南了
+    max_images: 1
+    max_texts: 1
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+follow:
+  date_created: '2022-03-10T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 关注
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 1
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+forbid:
+  date_created: '2023-03-12T00:00:00'
+  date_modified: '2023-03-12T00:00:00'
+  keywords:
+  - 禁止
+  - 禁
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+frieren_take:
+  date_created: '2024-01-18T00:00:00'
+  date_modified: '2024-08-09T00:00:00'
+  keywords:
+  - 芙莉莲拿
+  params_type:
+    args_type: null
+    default_texts:
+    - 所谓的男人啊，只要送他们这种东西就会很开心
+    max_images: 1
+    max_texts: 1
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags:
+  - 葬送的芙莉莲
+  - 芙莉莲
+funny_mirror:
+  date_created: '2022-03-13T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 哈哈镜
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+garbage:
+  date_created: '2022-04-14T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 垃圾
+  - 垃圾桶
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+genshin_eat:
+  date_created: '2024-08-06T00:00:00'
+  date_modified: '2024-08-10T00:00:00'
+  keywords:
+  - 原神吃
+  params_type:
+    args_type:
+      args_examples:
+      - character: 1
+        user_infos: []
+      - character: 2
+        user_infos: []
+      - character: 3
+        user_infos: []
+      - character: 4
+        user_infos: []
+      - character: 5
+        user_infos: []
+      - character: 6
+        user_infos: []
+      args_model:
+        $defs:
+          UserInfo:
+            properties:
+              gender:
+                default: unknown
+                enum:
+                - male
+                - female
+                - unknown
+                title: Gender
+                type: string
+              name:
+                default: ''
+                title: Name
+                type: string
+            title: UserInfo
+            type: object
+        properties:
+          character:
+            default: 0
+            description: 角色编号：1、八重神子，2、胡桃，3、妮露，4、可莉，5、刻晴，6、钟离
+            title: Character
+            type: integer
+          user_infos:
+            default: []
+            items:
+              $ref: '#/$defs/UserInfo'
+            title: User Infos
+            type: array
+        title: Model
+        type: object
+      parser_options:
+      - action: null
+        args:
+        - default: null
+          flags: null
+          name: character
+          value: int
+        compact: false
+        default: null
+        dest: null
+        help_text: 角色编号：1、八重神子，2、胡桃，3、妮露，4、可莉，5、刻晴，6、钟离
+        names:
+        - -c
+        - --character
+        - 角色
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts:
+  - args:
+    - --character
+    - '1'
+    humanized: 八重神子吃
+    key: (?:八重神子|神子|八重)吃
+  - args:
+    - --character
+    - '2'
+    humanized: null
+    key: 胡桃吃
+  - args:
+    - --character
+    - '3'
+    humanized: null
+    key: 妮露吃
+  - args:
+    - --character
+    - '4'
+    humanized: null
+    key: 可莉吃
+  - args:
+    - --character
+    - '5'
+    humanized: null
+    key: 刻晴吃
+  - args:
+    - --character
+    - '6'
+    humanized: null
+    key: 钟离吃
+  tags:
+  - 妮露
+  - 钟离
+  - 米哈游
+  - 八重神子
+  - 原神
+  - 可莉
+  - 刻晴
+  - 胡桃
+genshin_start:
+  date_created: '2023-07-01T00:00:00'
+  date_modified: '2023-07-01T00:00:00'
+  keywords:
+  - 原神启动
+  params_type:
+    args_type: null
+    default_texts:
+    - 原神，启动！
+    max_images: 1
+    max_texts: 1
+    min_images: 1
+    min_texts: 0
+  shortcuts:
+  - args:
+    - '{text}'
+    humanized: xx启动
+    key: (?P<text>\S+启动[!！]?)
+  tags: []
+good_news:
+  date_created: '2021-12-15T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 喜报
+  params_type:
+    args_type: null
+    default_texts:
+    - 悲报
+    max_images: 0
+    max_texts: 1
+    min_images: 0
+    min_texts: 1
+  shortcuts: []
+  tags: []
+google:
+  date_created: '2022-10-30T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - google
+  params_type:
+    args_type: null
+    default_texts:
+    - Google
+    max_images: 0
+    max_texts: 1
+    min_images: 0
+    min_texts: 1
+  shortcuts: []
+  tags: []
+google_captcha:
+  date_created: '2024-08-15T00:00:00'
+  date_modified: '2024-08-15T00:00:00'
+  keywords:
+  - 谷歌验证码
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 1
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+gorilla_throw:
+  date_created: '2024-11-16T00:00:00'
+  date_modified: '2024-11-22T00:00:00'
+  keywords:
+  - 猩猩扔
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+grab:
+  date_created: '2023-03-28T00:00:00'
+  date_modified: '2023-03-28T00:00:00'
+  keywords:
+  - 抓
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+guichu:
+  date_created: '2023-07-19T00:00:00'
+  date_modified: '2023-07-19T00:00:00'
+  keywords:
+  - 鬼畜
+  params_type:
+    args_type:
+      args_examples:
+      - direction: left
+        user_infos: []
+      - direction: right
+        user_infos: []
+      - direction: top
+        user_infos: []
+      - direction: bottom
+        user_infos: []
+      args_model:
+        $defs:
+          UserInfo:
+            properties:
+              gender:
+                default: unknown
+                enum:
+                - male
+                - female
+                - unknown
+                title: Gender
+                type: string
+              name:
+                default: ''
+                title: Name
+                type: string
+            title: UserInfo
+            type: object
+        properties:
+          direction:
+            default: left
+            description: 鬼畜对称方向，包含 left、right、top、bottom
+            enum:
+            - left
+            - right
+            - top
+            - bottom
+            title: Direction
+            type: string
+          user_infos:
+            default: []
+            items:
+              $ref: '#/$defs/UserInfo'
+            title: User Infos
+            type: array
+        title: Model
+        type: object
+      parser_options:
+      - action: null
+        args:
+        - default: null
+          flags: null
+          name: direction
+          value: str
+        compact: false
+        default: null
+        dest: null
+        help_text: 鬼畜对称方向，包含 left、right、top、bottom
+        names:
+        - -d
+        - --direction
+      - action:
+          type: 0
+          value: left
+        args: null
+        compact: false
+        default: null
+        dest: direction
+        help_text: null
+        names:
+        - --left
+        - 左
+      - action:
+          type: 0
+          value: right
+        args: null
+        compact: false
+        default: null
+        dest: direction
+        help_text: null
+        names:
+        - --right
+        - 右
+      - action:
+          type: 0
+          value: top
+        args: null
+        compact: false
+        default: null
+        dest: direction
+        help_text: null
+        names:
+        - --top
+        - 上
+      - action:
+          type: 0
+          value: bottom
+        args: null
+        compact: false
+        default: null
+        dest: direction
+        help_text: null
+        names:
+        - --bottom
+        - 下
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+gun:
+  date_created: '2022-08-22T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 手枪
+  params_type:
+    args_type:
+      args_examples:
+      - position: left
+        user_infos: []
+      - position: right
+        user_infos: []
+      - position: both
+        user_infos: []
+      args_model:
+        $defs:
+          UserInfo:
+            properties:
+              gender:
+                default: unknown
+                enum:
+                - male
+                - female
+                - unknown
+                title: Gender
+                type: string
+              name:
+                default: ''
+                title: Name
+                type: string
+            title: UserInfo
+            type: object
+        properties:
+          position:
+            default: left
+            description: 枪的位置，包含 left、right、both
+            enum:
+            - left
+            - right
+            - both
+            title: Position
+            type: string
+          user_infos:
+            default: []
+            items:
+              $ref: '#/$defs/UserInfo'
+            title: User Infos
+            type: array
+        title: Model
+        type: object
+      parser_options:
+      - action: null
+        args:
+        - default: null
+          flags: null
+          name: position
+          value: str
+        compact: false
+        default: null
+        dest: null
+        help_text: 枪的位置，包含 left、right、both
+        names:
+        - -p
+        - --position
+      - action:
+          type: 0
+          value: left
+        args: null
+        compact: false
+        default: null
+        dest: position
+        help_text: null
+        names:
+        - --left
+        - 左手
+      - action:
+          type: 0
+          value: right
+        args: null
+        compact: false
+        default: null
+        dest: position
+        help_text: null
+        names:
+        - --right
+        - 右手
+      - action:
+          type: 0
+          value: both
+        args: null
+        compact: false
+        default: null
+        dest: position
+        help_text: null
+        names:
+        - --both
+        - 双手
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+hammer:
+  date_created: '2022-04-20T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 锤
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+haruhi_raise:
+  date_created: '2024-11-13T00:00:00'
+  date_modified: '2024-11-13T00:00:00'
+  keywords:
+  - 凉宫春日举
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags:
+  - 凉宫春日
+high_EQ:
+  date_created: '2022-06-12T00:00:00'
+  date_modified: '2024-08-12T00:00:00'
+  keywords:
+  - 高低情商
+  - 低高情商
+  params_type:
+    args_type: null
+    default_texts:
+    - 高情商
+    - 低情商
+    max_images: 0
+    max_texts: 2
+    min_images: 0
+    min_texts: 2
+  shortcuts:
+  - args:
+    - '{low}'
+    - '{high}'
+    humanized: 低情商xx高情商xx
+    key: 低情商[\s:：]*(?P<low>\S+)\s*高情商[\s:：]*(?P<high>\S+)
+  - args:
+    - '{low}'
+    - '{high}'
+    humanized: 高情商xx低情商xx
+    key: 高情商[\s:：]*(?P<high>\S+)\s*低情商[\s:：]*(?P<low>\S+)
+  tags: []
+hit_screen:
+  date_created: '2022-09-30T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 打穿
+  - 打穿屏幕
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+hold_grudge:
+  date_created: '2021-12-15T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 记仇
+  params_type:
+    args_type: null
+    default_texts:
+    - 群友不发涩图
+    max_images: 0
+    max_texts: 1
+    min_images: 0
+    min_texts: 1
+  shortcuts: []
+  tags: []
+hold_tight:
+  date_created: '2022-10-01T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 抱紧
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+hug:
+  date_created: '2024-08-06T00:00:00'
+  date_modified: '2024-08-06T00:00:00'
+  keywords:
+  - 抱
+  - 抱抱
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 2
+    max_texts: 0
+    min_images: 2
+    min_texts: 0
+  shortcuts: []
+  tags: []
+hug_leg:
+  date_created: '2022-10-01T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 抱大腿
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+hutao_bite:
+  date_created: '2022-11-29T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 胡桃啃
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags:
+  - 原神
+  - 胡桃
+  - 米哈游
+imprison:
+  date_created: '2022-06-12T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 坐牢
+  params_type:
+    args_type: null
+    default_texts:
+    - 我发涩图被抓起来了
+    max_images: 0
+    max_texts: 1
+    min_images: 0
+    min_texts: 1
+  shortcuts: []
+  tags: []
+incivilization:
+  date_created: '2022-10-12T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 不文明
+  params_type:
+    args_type: null
+    default_texts:
+    - 你刚才说的话不是很礼貌！
+    max_images: 1
+    max_texts: 1
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+intel_inside:
+  date_created: '2024-10-29T00:00:00'
+  date_modified: '2024-10-29T00:00:00'
+  keywords:
+  - inside
+  params_type:
+    args_type: null
+    default_texts:
+    - intel
+    max_images: 0
+    max_texts: 1
+    min_images: 0
+    min_texts: 1
+  shortcuts:
+  - args:
+    - '{text}'
+    humanized: xx inside
+    key: (?P<text>\S{1,10})\s+inside
+  tags: []
+interview:
+  date_created: '2022-03-15T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 采访
+  params_type:
+    args_type: null
+    default_texts:
+    - 采访大佬经验
+    max_images: 2
+    max_texts: 1
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+jerk_off:
+  date_created: '2024-08-04T00:00:00'
+  date_modified: '2024-08-04T00:00:00'
+  keywords:
+  - 打胶
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+jerry_stare:
+  date_created: '2024-08-09T00:00:00'
+  date_modified: '2024-08-09T00:00:00'
+  keywords:
+  - 杰瑞盯
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags:
+  - 猫和老鼠
+  - 杰瑞
+jiamianqishi:
+  date_created: '2024-10-30T00:00:00'
+  date_modified: '2024-10-30T00:00:00'
+  keywords:
+  - 假面骑士
+  params_type:
+    args_type: null
+    default_texts:
+    - 哦～
+    - （飞扑）
+    - 一直想看你这幅表情
+    - 这幅嫉妒我的表情
+    max_images: 0
+    max_texts: 4
+    min_images: 0
+    min_texts: 4
+  shortcuts: []
+  tags: []
+jiji_king:
+  date_created: '2022-10-10T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 急急国王
+  params_type:
+    args_type:
+      args_examples:
+      - circle: false
+        user_infos: []
+      - circle: true
+        user_infos: []
+      args_model:
+        $defs:
+          UserInfo:
+            properties:
+              gender:
+                default: unknown
+                enum:
+                - male
+                - female
+                - unknown
+                title: Gender
+                type: string
+              name:
+                default: ''
+                title: Name
+                type: string
+            title: UserInfo
+            type: object
+        properties:
+          circle:
+            default: false
+            description: 是否将图片变为圆形
+            title: Circle
+            type: boolean
+          user_infos:
+            default: []
+            items:
+              $ref: '#/$defs/UserInfo'
+            title: User Infos
+            type: array
+        title: Model
+        type: object
+      parser_options:
+      - action:
+          type: 0
+          value: true
+        args: null
+        compact: false
+        default: false
+        dest: null
+        help_text: 是否将图片变为圆形
+        names:
+        - --circle
+        - 圆
+    default_texts: []
+    max_images: 11
+    max_texts: 11
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+jinhsi:
+  date_created: '2024-12-07T00:00:00'
+  date_modified: '2024-12-07T00:00:00'
+  keywords:
+  - 汐汐
+  - 今汐
+  params_type:
+    args_type:
+      args_examples: []
+      args_model:
+        $defs:
+          UserInfo:
+            properties:
+              gender:
+                default: unknown
+                enum:
+                - male
+                - female
+                - unknown
+                title: Gender
+                type: string
+              name:
+                default: ''
+                title: Name
+                type: string
+            title: UserInfo
+            type: object
+        properties:
+          number:
+            default: 0
+            description: 图片编号，范围为 1~13
+            title: Number
+            type: integer
+          user_infos:
+            default: []
+            items:
+              $ref: '#/$defs/UserInfo'
+            title: User Infos
+            type: array
+        title: Model
+        type: object
+      parser_options:
+      - action: null
+        args:
+        - default: null
+          flags: null
+          name: number
+          value: int
+        compact: false
+        default: null
+        dest: null
+        help_text: 图片编号，范围为 1~13
+        names:
+        - -n
+        - --number
+    default_texts:
+    - 汐汐
+    max_images: 0
+    max_texts: 1
+    min_images: 0
+    min_texts: 1
+  shortcuts: []
+  tags:
+  - 鸣潮
+  - 今汐
+jiubingfufa:
+  date_created: '2025-04-01T00:00:00'
+  date_modified: '2025-04-11T00:00:00'
+  keywords:
+  - 旧病复发
+  params_type:
+    args_type: null
+    default_texts:
+    - 此乃旧病复发也
+    max_images: 1
+    max_texts: 1
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+jiujiu:
+  date_created: '2022-04-20T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 啾啾
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+jump:
+  date_created: '2024-07-14T00:00:00'
+  date_modified: '2024-07-14T00:00:00'
+  keywords:
+  - 跳
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+kaleidoscope:
+  date_created: '2023-01-08T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 万花筒
+  - 万花镜
+  params_type:
+    args_type:
+      args_examples:
+      - circle: false
+        user_infos: []
+      - circle: true
+        user_infos: []
+      args_model:
+        $defs:
+          UserInfo:
+            properties:
+              gender:
+                default: unknown
+                enum:
+                - male
+                - female
+                - unknown
+                title: Gender
+                type: string
+              name:
+                default: ''
+                title: Name
+                type: string
+            title: UserInfo
+            type: object
+        properties:
+          circle:
+            default: false
+            description: 是否将图片变为圆形
+            title: Circle
+            type: boolean
+          user_infos:
+            default: []
+            items:
+              $ref: '#/$defs/UserInfo'
+            title: User Infos
+            type: array
+        title: Model
+        type: object
+      parser_options:
+      - action:
+          type: 0
+          value: true
+        args: null
+        compact: false
+        default: false
+        dest: null
+        help_text: 是否将图片变为圆形
+        names:
+        - --circle
+        - 圆
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+karyl_point:
+  date_created: '2022-11-16T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 凯露指
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags:
+  - 公主连结
+  - 凯露
+keep_away:
+  date_created: '2022-05-31T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 远离
+  params_type:
+    args_type: null
+    default_texts:
+    - "如何提高社交质量 : \n远离以下头像的人"
+    max_images: 8
+    max_texts: 1
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+keep_your_money:
+  date_created: '2024-12-29T00:00:00'
+  date_modified: '2024-12-31T00:00:00'
+  keywords:
+  - 压岁钱不要交给
+  params_type:
+    args_type:
+      args_examples: []
+      args_model:
+        $defs:
+          UserInfo:
+            properties:
+              gender:
+                default: unknown
+                enum:
+                - male
+                - female
+                - unknown
+                title: Gender
+                type: string
+              name:
+                default: ''
+                title: Name
+                type: string
+            title: UserInfo
+            type: object
+        properties:
+          number:
+            default: 0
+            description: 图片编号，1-阿罗娜，2-普拉娜
+            title: Number
+            type: integer
+          user_infos:
+            default: []
+            items:
+              $ref: '#/$defs/UserInfo'
+            title: User Infos
+            type: array
+        title: Model
+        type: object
+      parser_options:
+      - action: null
+        args:
+        - default: null
+          flags: null
+          name: number
+          value: int
+        compact: false
+        default: null
+        dest: null
+        help_text: 图片编号，1-阿罗娜，2-普拉娜
+        names:
+        - -n
+        - --number
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags:
+  - 普拉娜
+  - 碧蓝档案
+  - 阿罗娜
+  - 蔚蓝档案
+kick_ball:
+  date_created: '2022-11-29T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 踢球
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+kirby_hammer:
+  date_created: '2022-11-08T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 卡比锤
+  - 卡比重锤
+  params_type:
+    args_type:
+      args_examples:
+      - circle: false
+        user_infos: []
+      - circle: true
+        user_infos: []
+      args_model:
+        $defs:
+          UserInfo:
+            properties:
+              gender:
+                default: unknown
+                enum:
+                - male
+                - female
+                - unknown
+                title: Gender
+                type: string
+              name:
+                default: ''
+                title: Name
+                type: string
+            title: UserInfo
+            type: object
+        properties:
+          circle:
+            default: false
+            description: 是否将图片变为圆形
+            title: Circle
+            type: boolean
+          user_infos:
+            default: []
+            items:
+              $ref: '#/$defs/UserInfo'
+            title: User Infos
+            type: array
+        title: Model
+        type: object
+      parser_options:
+      - action:
+          type: 0
+          value: true
+        args: null
+        compact: false
+        default: false
+        dest: null
+        help_text: 是否将图片变为圆形
+        names:
+        - --circle
+        - 圆
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags:
+  - 星之卡比
+kiss:
+  date_created: '2021-06-11T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 亲
+  - 亲亲
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 2
+    max_texts: 0
+    min_images: 2
+    min_texts: 0
+  shortcuts: []
+  tags: []
+klee_eat:
+  date_created: '2022-11-29T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 可莉吃
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags:
+  - 原神
+  - 可莉
+  - 米哈游
+knock:
+  date_created: '2022-04-14T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 敲
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags:
+  - 鲨鲨
+  - 噶呜·古拉
+  - Gawr Gura
+kokona_seal:
+  date_created: '2024-11-05T00:00:00'
+  date_modified: '2024-11-22T00:00:00'
+  keywords:
+  - 心奈印章
+  params_type:
+    args_type:
+      args_examples: []
+      args_model:
+        $defs:
+          UserInfo:
+            properties:
+              gender:
+                default: unknown
+                enum:
+                - male
+                - female
+                - unknown
+                title: Gender
+                type: string
+              name:
+                default: ''
+                title: Name
+                type: string
+            title: UserInfo
+            type: object
+        properties:
+          number:
+            default: 0
+            description: 图片编号，范围为 1~12
+            title: Number
+            type: integer
+          user_infos:
+            default: []
+            items:
+              $ref: '#/$defs/UserInfo'
+            title: User Infos
+            type: array
+        title: Model
+        type: object
+      parser_options:
+      - action: null
+        args:
+        - default: null
+          flags: null
+          name: number
+          value: int
+        compact: false
+        default: null
+        dest: null
+        help_text: 图片编号，范围为 1~12
+        names:
+        - -n
+        - --number
+    default_texts:
+    - 满分
+    max_images: 0
+    max_texts: 1
+    min_images: 0
+    min_texts: 1
+  shortcuts: []
+  tags:
+  - 春原心奈
+  - 碧蓝档案
+  - 春原心菜
+  - 蔚蓝档案
+konata_watch:
+  date_created: '2024-08-18T00:00:00'
+  date_modified: '2024-08-19T00:00:00'
+  keywords:
+  - 泉此方看
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags:
+  - 泉此方
+  - 幸运星
+lash:
+  date_created: '2024-07-23T00:00:00'
+  date_modified: '2024-07-23T00:00:00'
+  keywords:
+  - 鞭笞
+  - 鞭打
+  - 鞭挞
+  - 鞭策
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 2
+    max_texts: 0
+    min_images: 2
+    min_texts: 0
+  shortcuts: []
+  tags: []
+learn:
+  date_created: '2022-12-04T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 偷学
+  params_type:
+    args_type: null
+    default_texts:
+    - 偷学群友数理基础
+    max_images: 1
+    max_texts: 1
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+left_right_jump:
+  date_created: '2024-07-14T00:00:00'
+  date_modified: '2024-07-14T00:00:00'
+  keywords:
+  - 左右横跳
+  params_type:
+    args_type:
+      args_examples:
+      - direction: left_right
+        user_infos: []
+      - direction: right_left
+        user_infos: []
+      args_model:
+        $defs:
+          UserInfo:
+            properties:
+              gender:
+                default: unknown
+                enum:
+                - male
+                - female
+                - unknown
+                title: Gender
+                type: string
+              name:
+                default: ''
+                title: Name
+                type: string
+            title: UserInfo
+            type: object
+        properties:
+          direction:
+            default: left_right
+            description: 跑动方向，包含 left_right、right_left
+            enum:
+            - left_right
+            - right_left
+            title: Direction
+            type: string
+          user_infos:
+            default: []
+            items:
+              $ref: '#/$defs/UserInfo'
+            title: User Infos
+            type: array
+        title: Model
+        type: object
+      parser_options:
+      - action: null
+        args:
+        - default: null
+          flags: null
+          name: direction
+          value: str
+        compact: false
+        default: null
+        dest: null
+        help_text: 跑动方向，包含 left_right、right_left
+        names:
+        - -d
+        - --direction
+      - action:
+          type: 0
+          value: left_right
+        args: null
+        compact: false
+        default: null
+        dest: direction
+        help_text: null
+        names:
+        - --left_right
+        - 左右
+      - action:
+          type: 0
+          value: right_left
+        args: null
+        compact: false
+        default: null
+        dest: direction
+        help_text: null
+        names:
+        - --right_left
+        - 右左
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+let_me_in:
+  date_created: '2024-07-18T00:00:00'
+  date_modified: '2024-07-18T00:00:00'
+  keywords:
+  - 让我进去
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+lick_candy:
+  date_created: '2024-08-14T00:00:00'
+  date_modified: '2024-08-14T00:00:00'
+  keywords:
+  - 舔糖
+  - 舔棒棒糖
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+lim_x_0:
+  date_created: '2023-01-09T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 等价无穷小
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+listen_music:
+  date_created: '2022-03-12T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 听音乐
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+little_angel:
+  date_created: '2022-01-01T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 小天使
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 1
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+little_do:
+  date_created: '2024-07-12T00:00:00'
+  date_modified: '2024-07-12T00:00:00'
+  keywords:
+  - 小撅
+  - 轻撅
+  - 滑稽撅
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 2
+    max_texts: 0
+    min_images: 2
+    min_texts: 0
+  shortcuts: []
+  tags: []
+loading:
+  date_created: '2021-12-29T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 加载中
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+look_flat:
+  date_created: '2022-10-06T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 看扁
+  params_type:
+    args_type:
+      args_examples: []
+      args_model:
+        $defs:
+          UserInfo:
+            properties:
+              gender:
+                default: unknown
+                enum:
+                - male
+                - female
+                - unknown
+                title: Gender
+                type: string
+              name:
+                default: ''
+                title: Name
+                type: string
+            title: UserInfo
+            type: object
+        properties:
+          ratio:
+            default: 2
+            description: 图片“压扁”比例，默认为 2
+            title: Ratio
+            type: integer
+          user_infos:
+            default: []
+            items:
+              $ref: '#/$defs/UserInfo'
+            title: User Infos
+            type: array
+        title: Model
+        type: object
+      parser_options:
+      - action: null
+        args:
+        - default: null
+          flags: null
+          name: ratio
+          value: int
+        compact: false
+        default: null
+        dest: null
+        help_text: 图片“压扁”比例，默认为 2
+        names:
+        - -r
+        - --ratio
+    default_texts:
+    - 可恶...被人看扁了
+    max_images: 1
+    max_texts: 1
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+look_this_icon:
+  date_created: '2022-10-07T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 看图标
+  params_type:
+    args_type: null
+    default_texts:
+    - '朋友
+
+      先看看这个图标再说话'
+    max_images: 1
+    max_texts: 1
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+loop:
+  date_created: '2024-07-14T00:00:00'
+  date_modified: '2024-08-15T00:00:00'
+  keywords:
+  - 循环
+  params_type:
+    args_type:
+      args_examples:
+      - direction: left
+        user_infos: []
+      - direction: right
+        user_infos: []
+      - direction: top
+        user_infos: []
+      - direction: bottom
+        user_infos: []
+      args_model:
+        $defs:
+          UserInfo:
+            properties:
+              gender:
+                default: unknown
+                enum:
+                - male
+                - female
+                - unknown
+                title: Gender
+                type: string
+              name:
+                default: ''
+                title: Name
+                type: string
+            title: UserInfo
+            type: object
+        properties:
+          direction:
+            default: top
+            description: 循环方向，包含 left、right、top、bottom
+            enum:
+            - left
+            - right
+            - top
+            - bottom
+            title: Direction
+            type: string
+          user_infos:
+            default: []
+            items:
+              $ref: '#/$defs/UserInfo'
+            title: User Infos
+            type: array
+        title: Model
+        type: object
+      parser_options:
+      - action: null
+        args:
+        - default: null
+          flags: null
+          name: direction
+          value: str
+        compact: false
+        default: null
+        dest: null
+        help_text: 循环方向，包含 left、right、top、bottom
+        names:
+        - -d
+        - --direction
+      - action:
+          type: 0
+          value: left
+        args: null
+        compact: false
+        default: null
+        dest: direction
+        help_text: null
+        names:
+        - --left
+        - 左
+      - action:
+          type: 0
+          value: right
+        args: null
+        compact: false
+        default: null
+        dest: direction
+        help_text: null
+        names:
+        - --right
+        - 右
+      - action:
+          type: 0
+          value: top
+        args: null
+        compact: false
+        default: null
+        dest: direction
+        help_text: null
+        names:
+        - --top
+        - 上
+      - action:
+          type: 0
+          value: bottom
+        args: null
+        compact: false
+        default: null
+        dest: direction
+        help_text: null
+        names:
+        - --bottom
+        - 下
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+lost_dog:
+  date_created: '2024-01-19T00:00:00'
+  date_modified: '2024-01-20T00:00:00'
+  keywords:
+  - 寻狗启事
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags:
+  - 原神
+  - 神里绫华
+  - 米哈游
+love_you:
+  date_created: '2022-03-13T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 永远爱你
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+luotianyi_need:
+  date_created: '2025-02-11T00:00:00'
+  date_modified: '2025-02-11T00:00:00'
+  keywords:
+  - 洛天依要
+  - 天依要
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags:
+  - 洛天依
+luotianyi_say:
+  date_created: '2025-01-07T00:00:00'
+  date_modified: '2025-01-07T00:00:00'
+  keywords:
+  - 洛天依说
+  - 天依说
+  params_type:
+    args_type: null
+    default_texts:
+    - 好想去海边啊～
+    max_images: 0
+    max_texts: 1
+    min_images: 0
+    min_texts: 1
+  shortcuts: []
+  tags:
+  - 洛天依
+luoyonghao_say:
+  date_created: '2023-03-28T00:00:00'
+  date_modified: '2023-03-28T00:00:00'
+  keywords:
+  - 罗永浩说
+  params_type:
+    args_type: null
+    default_texts:
+    - 又不是不能用
+    max_images: 0
+    max_texts: 1
+    min_images: 0
+    min_texts: 1
+  shortcuts: []
+  tags: []
+luxun_say:
+  date_created: '2021-12-15T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 鲁迅说
+  - 鲁迅说过
+  params_type:
+    args_type: null
+    default_texts:
+    - 我没有说过这句话
+    max_images: 0
+    max_texts: 1
+    min_images: 0
+    min_texts: 1
+  shortcuts: []
+  tags: []
+mahiro_readbook:
+  date_created: '2024-08-18T00:00:00'
+  date_modified: '2024-08-18T00:00:00'
+  keywords:
+  - 真寻看书
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags:
+  - 绪山真寻
+  - 别当欧尼酱了
+maikease:
+  date_created: '2023-07-30T00:00:00'
+  date_modified: '2023-07-30T00:00:00'
+  keywords:
+  - 麦克阿瑟说
+  params_type:
+    args_type: null
+    default_texts:
+    - 美国前五星上将麦克阿瑟
+    - 曾这样评价道
+    - 如果让我去阻止xxx
+    - 那么我宁愿去阻止上帝
+    max_images: 0
+    max_texts: 4
+    min_images: 0
+    min_texts: 4
+  shortcuts: []
+  tags: []
+maimai_awaken:
+  date_created: '2023-07-19T00:00:00'
+  date_modified: '2023-07-19T00:00:00'
+  keywords:
+  - 旅行伙伴觉醒
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags:
+  - 舞萌
+maimai_join:
+  date_created: '2023-07-19T00:00:00'
+  date_modified: '2023-07-19T00:00:00'
+  keywords:
+  - 旅行伙伴加入
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags:
+  - 舞萌
+make_friend:
+  date_created: '2022-03-09T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 交个朋友
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 1
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+marriage:
+  date_created: '2022-05-31T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 结婚申请
+  - 结婚登记
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+meteor:
+  date_created: '2022-10-21T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 流星
+  params_type:
+    args_type: null
+    default_texts:
+    - 我要对象
+    max_images: 0
+    max_texts: 1
+    min_images: 0
+    min_texts: 1
+  shortcuts: []
+  tags: []
+mihoyo:
+  date_created: '2023-05-06T00:00:00'
+  date_modified: '2023-05-06T00:00:00'
+  keywords:
+  - 米哈游
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+mourning:
+  date_created: '2023-07-29T00:00:00'
+  date_modified: '2023-07-29T00:00:00'
+  keywords:
+  - 上香
+  params_type:
+    args_type:
+      args_examples:
+      - black: false
+        user_infos: []
+      - black: true
+        user_infos: []
+      args_model:
+        $defs:
+          UserInfo:
+            properties:
+              gender:
+                default: unknown
+                enum:
+                - male
+                - female
+                - unknown
+                title: Gender
+                type: string
+              name:
+                default: ''
+                title: Name
+                type: string
+            title: UserInfo
+            type: object
+        properties:
+          black:
+            default: false
+            description: 是否将图片变为黑白
+            title: Black
+            type: boolean
+          user_infos:
+            default: []
+            items:
+              $ref: '#/$defs/UserInfo'
+            title: User Infos
+            type: array
+        title: Model
+        type: object
+      parser_options:
+      - action:
+          type: 0
+          value: true
+        args: null
+        compact: false
+        default: false
+        dest: null
+        help_text: 是否将图片变为黑白
+        names:
+        - --black
+        - 黑白
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+murmur:
+  date_created: '2021-12-31T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 低语
+  params_type:
+    args_type: null
+    default_texts:
+    - 你的假期余额不足
+    max_images: 0
+    max_texts: 1
+    min_images: 0
+    min_texts: 1
+  shortcuts: []
+  tags: []
+my_friend:
+  date_created: '2022-03-11T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 我朋友说
+  params_type:
+    args_type:
+      args_examples: []
+      args_model:
+        $defs:
+          UserInfo:
+            properties:
+              gender:
+                default: unknown
+                enum:
+                - male
+                - female
+                - unknown
+                title: Gender
+                type: string
+              name:
+                default: ''
+                title: Name
+                type: string
+            title: UserInfo
+            type: object
+        properties:
+          name:
+            default: ''
+            description: 指定名字
+            title: Name
+            type: string
+          user_infos:
+            default: []
+            items:
+              $ref: '#/$defs/UserInfo'
+            title: User Infos
+            type: array
+        title: Model
+        type: object
+      parser_options:
+      - action: null
+        args:
+        - default: null
+          flags: null
+          name: name
+          value: str
+        compact: false
+        default: null
+        dest: null
+        help_text: 指定名字
+        names:
+        - -n
+        - --name
+    default_texts:
+    - 让我康康
+    max_images: 1
+    max_texts: 10
+    min_images: 1
+    min_texts: 1
+  shortcuts: []
+  tags: []
+my_opinion:
+  date_created: '2024-07-14T00:00:00'
+  date_modified: '2024-07-14T00:00:00'
+  keywords:
+  - 我的意见如下
+  - 我的意见是
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 0
+    max_texts: 1
+    min_images: 0
+    min_texts: 1
+  shortcuts: []
+  tags:
+  - 东方Project
+my_wife:
+  date_created: '2022-07-29T00:00:00'
+  date_modified: '2024-08-12T00:00:00'
+  keywords:
+  - 我老婆
+  - 这是我老婆
+  params_type:
+    args_type:
+      args_examples: []
+      args_model:
+        $defs:
+          UserInfo:
+            properties:
+              gender:
+                default: unknown
+                enum:
+                - male
+                - female
+                - unknown
+                title: Gender
+                type: string
+              name:
+                default: ''
+                title: Name
+                type: string
+            title: UserInfo
+            type: object
+        properties:
+          name:
+            default: 老婆
+            description: 称呼，默认为“老婆”
+            title: Name
+            type: string
+          pronoun:
+            default: 我
+            description: 人称代词，默认为“我”
+            title: Pronoun
+            type: string
+          user_infos:
+            default: []
+            items:
+              $ref: '#/$defs/UserInfo'
+            title: User Infos
+            type: array
+        title: Model
+        type: object
+      parser_options:
+      - action: null
+        args:
+        - default: null
+          flags: null
+          name: pronoun
+          value: str
+        compact: false
+        default: null
+        dest: pronoun
+        help_text: 人称代词，默认为“我”
+        names:
+        - -p
+        - --pron
+      - action: null
+        args:
+        - default: null
+          flags: null
+          name: name
+          value: str
+        compact: false
+        default: null
+        dest: name
+        help_text: 称呼，默认为“老婆”
+        names:
+        - -n
+        - --name
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+nahida_bite:
+  date_created: '2023-06-23T00:00:00'
+  date_modified: '2024-08-10T00:00:00'
+  keywords:
+  - 纳西妲啃
+  - 草神啃
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags:
+  - 草神
+  - 纳西妲
+  - 原神
+  - 米哈游
+name_generator:
+  date_created: '2023-02-04T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 亚文化取名机
+  - 亚名
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+need:
+  date_created: '2022-03-30T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 需要
+  - 你可能需要
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+nekoha_holdsign:
+  date_created: '2023-03-30T00:00:00'
+  date_modified: '2023-03-30T00:00:00'
+  keywords:
+  - 猫羽雫举牌
+  - 猫猫举牌
+  params_type:
+    args_type: null
+    default_texts:
+    - V我50
+    max_images: 0
+    max_texts: 1
+    min_images: 0
+    min_texts: 1
+  shortcuts: []
+  tags:
+  - 猫羽雫
+nihaosaoa:
+  date_created: '2021-12-24T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 你好骚啊
+  params_type:
+    args_type: null
+    default_texts:
+    - 既然追求刺激
+    - 就贯彻到底了
+    - 你好骚啊
+    max_images: 0
+    max_texts: 3
+    min_images: 0
+    min_texts: 3
+  shortcuts: []
+  tags: []
+nijika_holdsign:
+  date_created: '2023-06-20T00:00:00'
+  date_modified: '2023-06-20T00:00:00'
+  keywords:
+  - 伊地知虹夏举牌
+  - 虹夏举牌
+  params_type:
+    args_type: null
+    default_texts:
+    - 你可少看点二次元吧
+    max_images: 0
+    max_texts: 1
+    min_images: 0
+    min_texts: 1
+  shortcuts: []
+  tags: []
+no_response:
+  date_created: '2022-10-01T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 无响应
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+nokia:
+  date_created: '2021-12-15T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 诺基亚
+  - 有内鬼
+  params_type:
+    args_type: null
+    default_texts:
+    - 无内鬼，继续交易
+    max_images: 0
+    max_texts: 1
+    min_images: 0
+    min_texts: 1
+  shortcuts: []
+  tags: []
+not_call_me:
+  date_created: '2022-11-16T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 不喊我
+  params_type:
+    args_type: null
+    default_texts:
+    - 开银趴不喊我是吧
+    max_images: 0
+    max_texts: 1
+    min_images: 0
+    min_texts: 1
+  shortcuts: []
+  tags: []
+note_for_leave:
+  date_created: '2023-04-27T00:00:00'
+  date_modified: '2023-04-27T00:00:00'
+  keywords:
+  - 请假条
+  params_type:
+    args_type:
+      args_examples: []
+      args_model:
+        $defs:
+          UserInfo:
+            properties:
+              gender:
+                default: unknown
+                enum:
+                - male
+                - female
+                - unknown
+                title: Gender
+                type: string
+              name:
+                default: ''
+                title: Name
+                type: string
+            title: UserInfo
+            type: object
+        properties:
+          name:
+            default: ''
+            description: 指定名字
+            title: Name
+            type: string
+          time:
+            default: ''
+            description: 指定时间
+            title: Time
+            type: string
+          user_infos:
+            default: []
+            items:
+              $ref: '#/$defs/UserInfo'
+            title: User Infos
+            type: array
+        title: Model
+        type: object
+      parser_options:
+      - action: null
+        args:
+        - default: null
+          flags: null
+          name: time
+          value: str
+        compact: false
+        default: null
+        dest: null
+        help_text: 指定时间
+        names:
+        - -t
+        - --time
+      - action: null
+        args:
+        - default: null
+          flags: null
+          name: name
+          value: str
+        compact: false
+        default: null
+        dest: null
+        help_text: 指定名字
+        names:
+        - -n
+        - --name
+    default_texts:
+    - 想玩原神
+    max_images: 1
+    max_texts: 1
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+operator_generator:
+  date_created: '2023-03-28T00:00:00'
+  date_modified: '2023-03-28T00:00:00'
+  keywords:
+  - 合成大干员
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 1
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+oshi_no_ko:
+  date_created: '2023-06-01T00:00:00'
+  date_modified: '2023-06-23T00:00:00'
+  keywords:
+  - 我推的网友
+  params_type:
+    args_type: null
+    default_texts:
+    - 网友
+    max_images: 1
+    max_texts: 1
+    min_images: 1
+    min_texts: 0
+  shortcuts:
+  - args:
+    - '{name}'
+    humanized: 我推的xx
+    key: 我推的(?P<name>\S+)
+  tags:
+  - 我推的孩子
+osu:
+  date_created: '2023-07-27T00:00:00'
+  date_modified: '2023-07-27T00:00:00'
+  keywords:
+  - osu
+  params_type:
+    args_type: null
+    default_texts:
+    - hso!
+    max_images: 0
+    max_texts: 1
+    min_images: 0
+    min_texts: 1
+  shortcuts: []
+  tags: []
+out:
+  date_created: '2024-04-26T00:00:00'
+  date_modified: '2024-04-26T00:00:00'
+  keywords:
+  - out
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+overtime:
+  date_created: '2023-01-08T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 加班
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+p5letter:
+  date_created: '2024-11-13T00:00:00'
+  date_modified: '2024-11-13T00:00:00'
+  keywords:
+  - 女神异闻录5预告信
+  - P5预告信
+  params_type:
+    args_type: null
+    default_texts:
+    - TAKEYOURHEART
+    max_images: 0
+    max_texts: 1
+    min_images: 0
+    min_texts: 1
+  shortcuts: []
+  tags: []
+paint:
+  date_created: '2022-03-11T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 这像画吗
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+painter:
+  date_created: '2022-06-04T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 小画家
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags:
+  - 崩坏3
+  - 米哈游
+  - 格蕾修
+panda_dragon_figure:
+  date_created: '2024-10-30T00:00:00'
+  date_modified: '2024-10-30T00:00:00'
+  keywords:
+  - 熊猫龙图
+  params_type:
+    args_type:
+      args_examples: []
+      args_model:
+        $defs:
+          UserInfo:
+            properties:
+              gender:
+                default: unknown
+                enum:
+                - male
+                - female
+                - unknown
+                title: Gender
+                type: string
+              name:
+                default: ''
+                title: Name
+                type: string
+            title: UserInfo
+            type: object
+        properties:
+          name:
+            default: ''
+            description: 龙图名字
+            title: Name
+            type: string
+          user_infos:
+            default: []
+            items:
+              $ref: '#/$defs/UserInfo'
+            title: User Infos
+            type: array
+        title: Model
+        type: object
+      parser_options:
+      - action: null
+        args:
+        - default: null
+          flags: null
+          name: name
+          value: str
+        compact: false
+        default: null
+        dest: null
+        help_text: 龙图名字
+        names:
+        - -n
+        - --name
+    default_texts:
+    - 我要玩原神
+    max_images: 0
+    max_texts: 1
+    min_images: 0
+    min_texts: 1
+  shortcuts:
+  - args:
+    - --name
+    - '{name}龙'
+    - '{text}'
+    humanized: xx龙：xx
+    key: (?P<name>\S{1,10})龙[\s:：]+(?P<text>\S+)
+  tags: []
+pass_the_buck:
+  date_created: '2023-03-31T00:00:00'
+  date_modified: '2023-04-18T00:00:00'
+  keywords:
+  - 推锅
+  - 甩锅
+  params_type:
+    args_type: null
+    default_texts:
+    - 你写!
+    max_images: 1
+    max_texts: 1
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+pat:
+  date_created: '2021-12-01T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 拍
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+pepe_raise:
+  date_created: '2024-08-18T00:00:00'
+  date_modified: '2024-08-18T00:00:00'
+  keywords:
+  - 佩佩举
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 2
+    max_texts: 0
+    min_images: 2
+    min_texts: 0
+  shortcuts: []
+  tags:
+  - 明日方舟
+perfect:
+  date_created: '2022-03-10T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 完美
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+petpet:
+  date_created: '2021-05-04T00:00:00'
+  date_modified: '2023-02-11T00:00:00'
+  keywords:
+  - 摸
+  - 摸摸
+  - 摸头
+  - rua
+  params_type:
+    args_type:
+      args_examples:
+      - circle: false
+        user_infos: []
+      - circle: true
+        user_infos: []
+      args_model:
+        $defs:
+          UserInfo:
+            properties:
+              gender:
+                default: unknown
+                enum:
+                - male
+                - female
+                - unknown
+                title: Gender
+                type: string
+              name:
+                default: ''
+                title: Name
+                type: string
+            title: UserInfo
+            type: object
+        properties:
+          circle:
+            default: false
+            description: 是否将图片变为圆形
+            title: Circle
+            type: boolean
+          user_infos:
+            default: []
+            items:
+              $ref: '#/$defs/UserInfo'
+            title: User Infos
+            type: array
+        title: Model
+        type: object
+      parser_options:
+      - action:
+          type: 0
+          value: true
+        args: null
+        compact: false
+        default: false
+        dest: null
+        help_text: 是否将图片变为圆形
+        names:
+        - --circle
+        - 圆
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+pinch:
+  date_created: '2023-11-18T00:00:00'
+  date_modified: '2023-11-18T00:00:00'
+  keywords:
+  - 捏
+  - 捏脸
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+pixelate:
+  date_created: '2024-08-12T00:00:00'
+  date_modified: '2024-08-12T00:00:00'
+  keywords:
+  - 像素化
+  params_type:
+    args_type:
+      args_examples: []
+      args_model:
+        $defs:
+          UserInfo:
+            properties:
+              gender:
+                default: unknown
+                enum:
+                - male
+                - female
+                - unknown
+                title: Gender
+                type: string
+              name:
+                default: ''
+                title: Name
+                type: string
+            title: UserInfo
+            type: object
+        properties:
+          number:
+            default: 10
+            description: 像素化大小，默认为 10
+            title: Number
+            type: integer
+          user_infos:
+            default: []
+            items:
+              $ref: '#/$defs/UserInfo'
+            title: User Infos
+            type: array
+        title: Model
+        type: object
+      parser_options:
+      - action: null
+        args:
+        - default: null
+          flags: null
+          name: number
+          value: int
+        compact: false
+        default: null
+        dest: null
+        help_text: 像素化大小，默认为 10
+        names:
+        - -n
+        - --number
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+pjsk:
+  date_created: '2024-12-19T00:00:00'
+  date_modified: '2024-12-19T00:00:00'
+  keywords:
+  - pjsk
+  - 世界计划
+  params_type:
+    args_type:
+      args_examples:
+      - character: 1
+        number: 0
+        user_infos: []
+      - character: 2
+        number: 0
+        user_infos: []
+      - character: 3
+        number: 0
+        user_infos: []
+      - character: 4
+        number: 0
+        user_infos: []
+      - character: 5
+        number: 0
+        user_infos: []
+      - character: 6
+        number: 0
+        user_infos: []
+      - character: 7
+        number: 0
+        user_infos: []
+      - character: 8
+        number: 0
+        user_infos: []
+      - character: 9
+        number: 0
+        user_infos: []
+      - character: 10
+        number: 0
+        user_infos: []
+      - character: 11
+        number: 0
+        user_infos: []
+      - character: 12
+        number: 0
+        user_infos: []
+      - character: 13
+        number: 0
+        user_infos: []
+      - character: 14
+        number: 0
+        user_infos: []
+      - character: 15
+        number: 0
+        user_infos: []
+      - character: 16
+        number: 0
+        user_infos: []
+      - character: 17
+        number: 0
+        user_infos: []
+      - character: 18
+        number: 0
+        user_infos: []
+      - character: 19
+        number: 0
+        user_infos: []
+      - character: 20
+        number: 0
+        user_infos: []
+      - character: 21
+        number: 0
+        user_infos: []
+      - character: 22
+        number: 0
+        user_infos: []
+      - character: 23
+        number: 0
+        user_infos: []
+      - character: 24
+        number: 0
+        user_infos: []
+      - character: 25
+        number: 0
+        user_infos: []
+      - character: 26
+        number: 0
+        user_infos: []
+      args_model:
+        $defs:
+          UserInfo:
+            properties:
+              gender:
+                default: unknown
+                enum:
+                - male
+                - female
+                - unknown
+                title: Gender
+                type: string
+              name:
+                default: ''
+                title: Name
+                type: string
+            title: UserInfo
+            type: object
+        properties:
+          character:
+            default: 0
+            description: 角色编号：1、爱莉，2、彰人，3、杏，4、梦，5、绘名，6、遥，7、穗波，8、一歌，9、KAITO，10、奏，11、心羽，12、连，13、流歌，14、真冬，15、MEIKO，16、初音未来，17、实乃理，18、瑞希，19、宁宁，20、铃，21、类，22、咲希，23、志步，24、雫，25、冬弥，26、司
+            title: Character
+            type: integer
+          number:
+            default: 0
+            description: 图片编号
+            title: Number
+            type: integer
+          user_infos:
+            default: []
+            items:
+              $ref: '#/$defs/UserInfo'
+            title: User Infos
+            type: array
+        title: Model
+        type: object
+      parser_options:
+      - action: null
+        args:
+        - default: null
+          flags: null
+          name: character
+          value: int
+        compact: false
+        default: null
+        dest: null
+        help_text: 角色编号：1、爱莉，2、彰人，3、杏，4、梦，5、绘名，6、遥，7、穗波，8、一歌，9、KAITO，10、奏，11、心羽，12、连，13、流歌，14、真冬，15、MEIKO，16、初音未来，17、实乃理，18、瑞希，19、宁宁，20、铃，21、类，22、咲希，23、志步，24、雫，25、冬弥，26、司
+        names:
+        - -c
+        - --character
+        - 角色编号
+      - action: null
+        args:
+        - default: null
+          flags: null
+          name: number
+          value: int
+        compact: false
+        default: null
+        dest: null
+        help_text: 图片编号
+        names:
+        - -n
+        - --number
+        - 图片编号
+    default_texts: []
+    max_images: 0
+    max_texts: 1
+    min_images: 0
+    min_texts: 1
+  shortcuts:
+  - args:
+    - --character
+    - '1'
+    humanized: pjsk爱莉
+    key: (:?pjsk|世界计划)[_-]?(:?爱莉|airi)
+  - args:
+    - --character
+    - '2'
+    humanized: pjsk彰人
+    key: (:?pjsk|世界计划)[_-]?(:?彰人|akito)
+  - args:
+    - --character
+    - '3'
+    humanized: pjsk杏
+    key: (:?pjsk|世界计划)[_-]?(:?杏|an)
+  - args:
+    - --character
+    - '4'
+    humanized: pjsk梦
+    key: (:?pjsk|世界计划)[_-]?(:?梦|emu)
+  - args:
+    - --character
+    - '5'
+    humanized: pjsk绘名
+    key: (:?pjsk|世界计划)[_-]?(:?绘名|ena)
+  - args:
+    - --character
+    - '6'
+    humanized: pjsk遥
+    key: (:?pjsk|世界计划)[_-]?(:?遥|haruka)
+  - args:
+    - --character
+    - '7'
+    humanized: pjsk穗波
+    key: (:?pjsk|世界计划)[_-]?(:?穗波|honami)
+  - args:
+    - --character
+    - '8'
+    humanized: pjsk一歌
+    key: (:?pjsk|世界计划)[_-]?(:?一歌|ichika)
+  - args:
+    - --character
+    - '9'
+    humanized: pjskKAITO
+    key: (:?pjsk|世界计划)[_-]?(:?KAITO|kaito)
+  - args:
+    - --character
+    - '10'
+    humanized: pjsk奏
+    key: (:?pjsk|世界计划)[_-]?(:?奏|kanade)
+  - args:
+    - --character
+    - '11'
+    humanized: pjsk心羽
+    key: (:?pjsk|世界计划)[_-]?(:?心羽|kohane)
+  - args:
+    - --character
+    - '12'
+    humanized: pjsk连
+    key: (:?pjsk|世界计划)[_-]?(:?连|len)
+  - args:
+    - --character
+    - '13'
+    humanized: pjsk流歌
+    key: (:?pjsk|世界计划)[_-]?(:?流歌|luka)
+  - args:
+    - --character
+    - '14'
+    humanized: pjsk真冬
+    key: (:?pjsk|世界计划)[_-]?(:?真冬|mafuyu)
+  - args:
+    - --character
+    - '15'
+    humanized: pjskMEIKO
+    key: (:?pjsk|世界计划)[_-]?(:?MEIKO|meiko)
+  - args:
+    - --character
+    - '16'
+    humanized: pjsk初音未来
+    key: (:?pjsk|世界计划)[_-]?(:?初音未来|miku)
+  - args:
+    - --character
+    - '17'
+    humanized: pjsk实乃理
+    key: (:?pjsk|世界计划)[_-]?(:?实乃理|minori)
+  - args:
+    - --character
+    - '18'
+    humanized: pjsk瑞希
+    key: (:?pjsk|世界计划)[_-]?(:?瑞希|mizuki)
+  - args:
+    - --character
+    - '19'
+    humanized: pjsk宁宁
+    key: (:?pjsk|世界计划)[_-]?(:?宁宁|nene)
+  - args:
+    - --character
+    - '20'
+    humanized: pjsk铃
+    key: (:?pjsk|世界计划)[_-]?(:?铃|rin)
+  - args:
+    - --character
+    - '21'
+    humanized: pjsk类
+    key: (:?pjsk|世界计划)[_-]?(:?类|rui)
+  - args:
+    - --character
+    - '22'
+    humanized: pjsk咲希
+    key: (:?pjsk|世界计划)[_-]?(:?咲希|saki)
+  - args:
+    - --character
+    - '23'
+    humanized: pjsk志步
+    key: (:?pjsk|世界计划)[_-]?(:?志步|shiho)
+  - args:
+    - --character
+    - '24'
+    humanized: pjsk雫
+    key: (:?pjsk|世界计划)[_-]?(:?雫|shizuku)
+  - args:
+    - --character
+    - '25'
+    humanized: pjsk冬弥
+    key: (:?pjsk|世界计划)[_-]?(:?冬弥|touya)
+  - args:
+    - --character
+    - '26'
+    humanized: pjsk司
+    key: (:?pjsk|世界计划)[_-]?(:?司|tsukasa)
+  tags:
+  - 世界计划
+plana_eat:
+  date_created: '2024-11-21T00:00:00'
+  date_modified: '2024-11-21T00:00:00'
+  keywords:
+  - 普拉娜吃
+  - 普拉娜舔
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags:
+  - 普拉娜
+  - 碧蓝档案
+  - 蔚蓝档案
+play:
+  date_created: '2021-10-09T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 顶
+  - 玩
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags:
+  - 咖波
+  - 猫猫虫
+play_baseball:
+  date_created: '2025-06-03T00:00:00'
+  date_modified: '2025-06-03T00:00:00'
+  keywords:
+  - 打棒球
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags:
+  - 咖波
+  - 猫猫虫
+play_basketball:
+  date_created: '2025-04-30T00:00:00'
+  date_modified: '2025-04-30T00:00:00'
+  keywords:
+  - 打篮球
+  - 火柴人打篮球
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags:
+  - 火柴人
+play_game:
+  date_created: '2022-01-04T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 玩游戏
+  params_type:
+    args_type: null
+    default_texts:
+    - 来玩休闲游戏啊
+    max_images: 1
+    max_texts: 1
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+play_together:
+  date_created: '2024-07-26T00:00:00'
+  date_modified: '2024-07-26T00:00:00'
+  keywords:
+  - 一起玩
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags:
+  - 蔚蓝档案
+  - 碧蓝档案
+police:
+  date_created: '2022-02-23T00:00:00'
+  date_modified: '2024-09-06T00:00:00'
+  keywords:
+  - 出警
+  params_type:
+    args_type: null
+    default_texts:
+    - 平安名すみれ
+    max_images: 1
+    max_texts: 1
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+police1:
+  date_created: '2022-03-12T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 警察
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+pornhub:
+  date_created: '2022-10-27T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - ph
+  - pornhub
+  params_type:
+    args_type: null
+    default_texts:
+    - You
+    - Tube
+    max_images: 0
+    max_texts: 2
+    min_images: 0
+    min_texts: 2
+  shortcuts: []
+  tags: []
+potato:
+  date_created: '2023-01-19T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 土豆
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+pound:
+  date_created: '2022-03-30T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 捣
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+printing:
+  date_created: '2023-01-26T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 打印
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+prpr:
+  date_created: '2022-03-05T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 舔
+  - 舔屏
+  - prpr
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+psyduck:
+  date_created: '2022-06-14T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 可达鸭
+  params_type:
+    args_type: null
+    default_texts:
+    - 来份
+    - 涩图
+    max_images: 0
+    max_texts: 2
+    min_images: 0
+    min_texts: 2
+  shortcuts: []
+  tags: []
+punch:
+  date_created: '2022-03-18T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 打拳
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+pyramid:
+  date_created: '2024-08-16T00:00:00'
+  date_modified: '2024-08-18T00:00:00'
+  keywords:
+  - 四棱锥
+  - 金字塔
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 4
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+qiegewala:
+  date_created: '2021-12-24T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 切格瓦拉
+  params_type:
+    args_type: null
+    default_texts:
+    - 没有钱啊 肯定要做的啊
+    - 不做的话没有钱用
+    - 那你不会去打工啊
+    - 有手有脚的
+    - 打工是不可能打工的
+    - 这辈子不可能打工的
+    max_images: 0
+    max_texts: 6
+    min_images: 0
+    min_texts: 6
+  shortcuts: []
+  tags: []
+raise_image:
+  date_created: '2023-08-09T00:00:00'
+  date_modified: '2023-08-09T00:00:00'
+  keywords:
+  - 举
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+raise_sign:
+  date_created: '2022-06-12T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 举牌
+  params_type:
+    args_type: null
+    default_texts:
+    - 大佬带带我
+    max_images: 0
+    max_texts: 1
+    min_images: 0
+    min_texts: 1
+  shortcuts: []
+  tags: []
+read_book:
+  date_created: '2022-08-22T00:00:00'
+  date_modified: '2023-10-25T00:00:00'
+  keywords:
+  - 看书
+  params_type:
+    args_type: null
+    default_texts:
+    - エロ本
+    max_images: 1
+    max_texts: 1
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+remote_control:
+  date_created: '2025-03-04T00:00:00'
+  date_modified: '2025-03-24T00:00:00'
+  keywords:
+  - 遥控
+  - 控制
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+repeat:
+  date_created: '2022-06-08T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 复读
+  params_type:
+    args_type: null
+    default_texts:
+    - 救命啊
+    max_images: 5
+    max_texts: 1
+    min_images: 1
+    min_texts: 1
+  shortcuts: []
+  tags: []
+rip:
+  date_created: '2021-05-05T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 撕
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 2
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+rip_angrily:
+  date_created: '2022-10-09T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 怒撕
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+rip_clothes:
+  date_created: '2025-05-07T00:00:00'
+  date_modified: '2025-06-03T00:00:00'
+  keywords:
+  - 撕衣服
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+rise_dead:
+  date_created: '2022-11-08T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 诈尸
+  - 秽土转生
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+roll:
+  date_created: '2022-01-04T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 滚
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+rotate_3d:
+  date_created: '2024-04-30T00:00:00'
+  date_modified: '2024-04-30T00:00:00'
+  keywords:
+  - 三维旋转
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+rub:
+  date_created: '2021-06-11T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 贴
+  - 贴贴
+  - 蹭
+  - 蹭蹭
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 2
+    max_texts: 0
+    min_images: 2
+    min_texts: 0
+  shortcuts: []
+  tags: []
+run:
+  date_created: '2022-10-17T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 快跑
+  params_type:
+    args_type: null
+    default_texts:
+    - 快跑
+    max_images: 0
+    max_texts: 1
+    min_images: 0
+    min_texts: 1
+  shortcuts: []
+  tags: []
+run_away:
+  date_created: '2024-07-23T00:00:00'
+  date_modified: '2024-07-23T00:00:00'
+  keywords:
+  - 快逃
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags:
+  - 初音未来
+safe_sense:
+  date_created: '2022-03-14T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 安全感
+  params_type:
+    args_type: null
+    default_texts:
+    - '你给我的安全感
+
+      远不及{ta}的万分之一'
+    max_images: 1
+    max_texts: 1
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+saimin_app:
+  date_created: '2024-12-10T00:00:00'
+  date_modified: '2024-12-10T00:00:00'
+  keywords:
+  - 催眠app
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+scratch_head:
+  date_created: '2023-01-07T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 挠头
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+scratchcard:
+  date_created: '2022-10-05T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 刮刮乐
+  params_type:
+    args_type: null
+    default_texts:
+    - 谢谢参与
+    max_images: 0
+    max_texts: 1
+    min_images: 0
+    min_texts: 1
+  shortcuts: []
+  tags: []
+scroll:
+  date_created: '2022-01-19T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 滚屏
+  params_type:
+    args_type: null
+    default_texts:
+    - 你们说话啊
+    max_images: 0
+    max_texts: 1
+    min_images: 0
+    min_texts: 1
+  shortcuts: []
+  tags: []
+seal:
+  date_created: '2025-05-25T00:00:00'
+  date_modified: '2025-05-25T00:00:00'
+  keywords:
+  - 源石封印
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags:
+  - 明日方舟
+sekaiichi_kawaii:
+  date_created: '2024-12-04T00:00:00'
+  date_modified: '2024-12-04T00:00:00'
+  keywords:
+  - 世界第一可爱
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags:
+  - 学园偶像大师
+  - 藤田琴音
+shake_head:
+  date_created: '2024-10-31T00:00:00'
+  date_modified: '2024-10-31T00:00:00'
+  keywords:
+  - 晃脑
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+shiroko_pero:
+  date_created: '2024-08-10T00:00:00'
+  date_modified: '2024-08-10T00:00:00'
+  keywords:
+  - 白子舔
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags:
+  - 砂狼白子
+  - 蔚蓝档案
+  - 碧蓝档案
+shishilani:
+  date_created: '2021-12-24T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 食屎啦你
+  params_type:
+    args_type: null
+    default_texts:
+    - 穿西装打领带
+    - 拿大哥大有什么用
+    - 跟着这样的大哥
+    - 食屎啦你
+    max_images: 0
+    max_texts: 4
+    min_images: 0
+    min_texts: 4
+  shortcuts: []
+  tags: []
+shock:
+  date_created: '2022-03-12T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 震惊
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+shoot:
+  date_created: '2024-08-19T00:00:00'
+  date_modified: '2024-08-19T00:00:00'
+  keywords:
+  - 射
+  - 🐍
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+shuifandui:
+  date_created: '2021-12-24T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 谁反对
+  params_type:
+    args_type: null
+    default_texts:
+    - 我话说完了
+    - 谁赞成
+    - 谁反对
+    - 我反对
+    max_images: 0
+    max_texts: 4
+    min_images: 0
+    min_texts: 4
+  shortcuts: []
+  tags: []
+shutup:
+  date_created: '2022-01-19T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 别说了
+  params_type:
+    args_type: null
+    default_texts:
+    - 你不要再说了
+    max_images: 0
+    max_texts: 1
+    min_images: 0
+    min_texts: 1
+  shortcuts: []
+  tags: []
+sit_still:
+  date_created: '2022-12-03T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 坐得住
+  - 坐的住
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 1
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+slap:
+  date_created: '2022-01-19T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 一巴掌
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 0
+    max_texts: 1
+    min_images: 0
+    min_texts: 1
+  shortcuts: []
+  tags: []
+slogan:
+  date_created: '2022-06-12T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 口号
+  params_type:
+    args_type: null
+    default_texts:
+    - 我们是谁？
+    - 浙大人！
+    - 到浙大来做什么？
+    - 混！
+    - 将来毕业后要做什么样的人？
+    - 混混！
+    max_images: 0
+    max_texts: 6
+    min_images: 0
+    min_texts: 6
+  shortcuts: []
+  tags: []
+smash:
+  date_created: '2022-11-29T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 砸
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+sold_out:
+  date_created: '2024-11-18T00:00:00'
+  date_modified: '2024-11-18T00:00:00'
+  keywords:
+  - 卖掉了
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+speechless:
+  date_created: '2024-11-12T00:00:00'
+  date_modified: '2024-11-12T00:00:00'
+  keywords:
+  - 无语
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 1
+    min_images: 1
+    min_texts: 0
+  shortcuts:
+  - args:
+    - '{text}'
+    humanized: 典型的xx思维
+    key: (?P<text>典型的\S+思维)
+  tags: []
+sphere_rotate:
+  date_created: '2025-07-06T00:00:00'
+  date_modified: '2025-07-06T00:00:00'
+  keywords:
+  - 球面旋转
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+spider:
+  date_created: '2025-04-27T00:00:00'
+  date_modified: '2025-04-27T00:00:00'
+  keywords:
+  - 蜘蛛
+  - 蜘蛛爬
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+stare_at_you:
+  date_created: '2025-01-28T00:00:00'
+  date_modified: '2025-02-02T00:00:00'
+  keywords:
+  - 盯着你
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+steam_message:
+  date_created: '2024-08-21T00:00:00'
+  date_modified: '2024-08-21T00:00:00'
+  keywords:
+  - steam消息
+  params_type:
+    args_type:
+      args_examples: []
+      args_model:
+        $defs:
+          UserInfo:
+            properties:
+              gender:
+                default: unknown
+                enum:
+                - male
+                - female
+                - unknown
+                title: Gender
+                type: string
+              name:
+                default: ''
+                title: Name
+                type: string
+            title: UserInfo
+            type: object
+        properties:
+          name:
+            default: ''
+            description: 指定名字
+            title: Name
+            type: string
+          user_infos:
+            default: []
+            items:
+              $ref: '#/$defs/UserInfo'
+            title: User Infos
+            type: array
+        title: Model
+        type: object
+      parser_options:
+      - action: null
+        args:
+        - default: null
+          flags: null
+          name: name
+          value: str
+        compact: false
+        default: null
+        dest: null
+        help_text: 指定名字
+        names:
+        - -n
+        - --name
+    default_texts:
+    - 黑神话：悟空
+    max_images: 1
+    max_texts: 1
+    min_images: 1
+    min_texts: 1
+  shortcuts:
+  - args:
+    - --name
+    - '{name}'
+    - '{game}'
+    humanized: xx正在玩xx
+    key: (?P<name>\S+)正在玩(?P<game>\S+)
+  tags: []
+step_on:
+  date_created: '2023-03-28T00:00:00'
+  date_modified: '2023-03-28T00:00:00'
+  keywords:
+  - 踩
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+stew:
+  date_created: '2024-01-19T00:00:00'
+  date_modified: '2024-01-19T00:00:00'
+  keywords:
+  - 炖
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 1
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+stickman_dancing:
+  date_created: '2025-04-30T00:00:00'
+  date_modified: '2025-04-30T00:00:00'
+  keywords:
+  - 跳舞
+  - 火柴人跳舞
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags:
+  - 火柴人
+stretch:
+  date_created: '2023-03-28T00:00:00'
+  date_modified: '2023-03-28T00:00:00'
+  keywords:
+  - 双手
+  - 伸展
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+subject3:
+  date_created: '2024-04-17T00:00:00'
+  date_modified: '2024-04-17T00:00:00'
+  keywords:
+  - 科目三
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+suck:
+  date_created: '2022-04-20T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 吸
+  - 嗦
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+support:
+  date_created: '2021-05-05T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 精神支柱
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+swirl_turn:
+  date_created: '2024-05-07T00:00:00'
+  date_modified: '2024-05-07T00:00:00'
+  keywords:
+  - 回旋转
+  - 旋风转
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+symmetric:
+  date_created: '2022-03-14T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 对称
+  params_type:
+    args_type:
+      args_examples:
+      - direction: left
+        user_infos: []
+      - direction: right
+        user_infos: []
+      - direction: top
+        user_infos: []
+      - direction: bottom
+        user_infos: []
+      args_model:
+        $defs:
+          UserInfo:
+            properties:
+              gender:
+                default: unknown
+                enum:
+                - male
+                - female
+                - unknown
+                title: Gender
+                type: string
+              name:
+                default: ''
+                title: Name
+                type: string
+            title: UserInfo
+            type: object
+        properties:
+          direction:
+            default: left
+            description: 对称方向，包含 left、right、top、bottom
+            enum:
+            - left
+            - right
+            - top
+            - bottom
+            title: Direction
+            type: string
+          user_infos:
+            default: []
+            items:
+              $ref: '#/$defs/UserInfo'
+            title: User Infos
+            type: array
+        title: Model
+        type: object
+      parser_options:
+      - action: null
+        args:
+        - default: null
+          flags: null
+          name: direction
+          value: str
+        compact: false
+        default: null
+        dest: null
+        help_text: 对称方向，包含 left、right、top、bottom
+        names:
+        - -d
+        - --direction
+      - action:
+          type: 0
+          value: left
+        args: null
+        compact: false
+        default: null
+        dest: direction
+        help_text: null
+        names:
+        - --left
+        - 左
+      - action:
+          type: 0
+          value: right
+        args: null
+        compact: false
+        default: null
+        dest: direction
+        help_text: null
+        names:
+        - --right
+        - 右
+      - action:
+          type: 0
+          value: top
+        args: null
+        compact: false
+        default: null
+        dest: direction
+        help_text: null
+        names:
+        - --top
+        - 上
+      - action:
+          type: 0
+          value: bottom
+        args: null
+        compact: false
+        default: null
+        dest: direction
+        help_text: null
+        names:
+        - --bottom
+        - 下
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+tankuku_raisesign:
+  date_created: '2022-10-01T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 唐可可举牌
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags:
+  - LoveLive!Superstar!!
+  - 唐可可
+taunt:
+  date_created: '2023-07-19T00:00:00'
+  date_modified: '2023-07-19T00:00:00'
+  keywords:
+  - 嘲讽
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+teach:
+  date_created: '2022-08-16T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 讲课
+  - 敲黑板
+  params_type:
+    args_type: null
+    default_texts:
+    - 我老婆
+    max_images: 1
+    max_texts: 1
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags:
+  - 莉可丽丝
+  - 井之上泷奈
+tease:
+  date_created: '2023-06-27T00:00:00'
+  date_modified: '2023-06-27T00:00:00'
+  keywords:
+  - 拿捏
+  - 戏弄
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags:
+  - 蔚蓝档案
+  - 碧蓝档案
+telescope:
+  date_created: '2024-01-18T00:00:00'
+  date_modified: '2024-01-18T00:00:00'
+  keywords:
+  - 望远镜
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+thermometer_gun:
+  date_created: '2024-09-03T00:00:00'
+  date_modified: '2024-09-03T00:00:00'
+  keywords:
+  - 体温枪
+  params_type:
+    args_type: null
+    default_texts:
+    - 笨蛋
+    max_images: 1
+    max_texts: 1
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+think_what:
+  date_created: '2022-05-11T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 想什么
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+this_chicken:
+  date_created: '2023-11-12T00:00:00'
+  date_modified: '2024-01-18T00:00:00'
+  keywords:
+  - 这是鸡
+  - 🐔
+  params_type:
+    args_type: null
+    default_texts:
+    - 这是十二生肖中的鸡
+    max_images: 1
+    max_texts: 1
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+throw:
+  date_created: '2021-05-05T00:00:00'
+  date_modified: '2023-03-30T00:00:00'
+  keywords:
+  - 丢
+  - 扔
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags:
+  - 东方Project
+throw_gif:
+  date_created: '2022-03-09T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 抛
+  - 掷
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+thump:
+  date_created: '2022-03-30T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 捶
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+thump_wildly:
+  date_created: '2023-03-31T00:00:00'
+  date_modified: '2023-03-31T00:00:00'
+  keywords:
+  - 捶爆
+  - 爆捶
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags:
+  - 明日方舟
+tightly:
+  date_created: '2022-04-20T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 紧贴
+  - 紧紧贴着
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+time_to_go:
+  date_created: '2024-09-04T00:00:00'
+  date_modified: '2024-09-04T00:00:00'
+  keywords:
+  - 该走了
+  params_type:
+    args_type: null
+    default_texts:
+    - 说完了吗？该走了
+    max_images: 1
+    max_texts: 1
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+together:
+  date_created: '2022-10-13T00:00:00'
+  date_modified: '2023-03-29T00:00:00'
+  keywords:
+  - 一起
+  params_type:
+    args_type: null
+    default_texts:
+    - 一起玩{name}吧！
+    max_images: 1
+    max_texts: 1
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+tom_tease:
+  date_created: '2024-01-19T00:00:00'
+  date_modified: '2024-01-19T00:00:00'
+  keywords:
+  - 汤姆嘲笑
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags:
+  - 汤姆
+  - 猫和老鼠
+tomb_yeah:
+  date_created: '2023-11-12T00:00:00'
+  date_modified: '2023-11-12T00:00:00'
+  keywords:
+  - 上坟
+  - 坟前比耶
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 2
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+top_notch:
+  date_created: '2024-08-17T00:00:00'
+  date_modified: '2024-08-17T00:00:00'
+  keywords:
+  - 顶尖
+  params_type:
+    args_type: null
+    default_texts:
+    - 运营
+    max_images: 0
+    max_texts: 1
+    min_images: 0
+    min_texts: 1
+  shortcuts: []
+  tags: []
+trance:
+  date_created: '2022-12-11T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 恍惚
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+trolley:
+  date_created: '2025-04-12T00:00:00'
+  date_modified: '2025-04-12T00:00:00'
+  keywords:
+  - 推车
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+turn:
+  date_created: '2022-01-01T00:00:00'
+  date_modified: '2024-09-30T00:00:00'
+  keywords:
+  - 转
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+twist:
+  date_created: '2022-03-09T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 搓
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+universal:
+  date_created: '2022-04-20T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 万能表情
+  - 空白表情
+  params_type:
+    args_type: null
+    default_texts:
+    - 在此处添加文字
+    max_images: 1
+    max_texts: 10
+    min_images: 1
+    min_texts: 1
+  shortcuts: []
+  tags: []
+upside_down:
+  date_created: '2024-10-12T00:00:00'
+  date_modified: '2024-10-12T00:00:00'
+  keywords:
+  - 反了
+  params_type:
+    args_type: null
+    default_texts:
+    - 我看你们是反了！
+    max_images: 1
+    max_texts: 1
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+vibrate:
+  date_created: '2023-08-28T00:00:00'
+  date_modified: '2023-08-28T00:00:00'
+  keywords:
+  - 震动
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+wakeup:
+  date_created: '2022-06-12T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 好起来了
+  params_type:
+    args_type: null
+    default_texts:
+    - 好
+    max_images: 0
+    max_texts: 1
+    min_images: 0
+    min_texts: 1
+  shortcuts:
+  - args:
+    - '{text}'
+    humanized: xx 起来了
+    key: (?P<text>\S{1,4})\s+起来了
+  tags: []
+wallpaper:
+  date_created: '2022-03-09T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 墙纸
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags:
+  - 瑞克和莫蒂
+  - 瑞克·桑切斯
+walnut_pad:
+  date_created: '2022-08-07T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 胡桃平板
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags:
+  - 莉可丽丝
+  - 胡桃
+walnut_zoom:
+  date_created: '2022-10-01T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 胡桃放大
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags:
+  - 莉可丽丝
+  - 胡桃
+wangjingze:
+  date_created: '2021-12-24T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 王境泽
+  params_type:
+    args_type: null
+    default_texts:
+    - 我就是饿死
+    - 死外边 从这里跳下去
+    - 不会吃你们一点东西
+    - 真香
+    max_images: 0
+    max_texts: 4
+    min_images: 0
+    min_texts: 4
+  shortcuts: []
+  tags: []
+washer:
+  date_created: '2024-01-18T00:00:00'
+  date_modified: '2024-01-18T00:00:00'
+  keywords:
+  - 洗衣机
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+wave:
+  date_created: '2022-10-26T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 波纹
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+wechat_pay:
+  date_created: '2024-10-30T00:00:00'
+  date_modified: '2024-10-30T00:00:00'
+  keywords:
+  - 微信支付
+  params_type:
+    args_type:
+      args_examples: []
+      args_model:
+        $defs:
+          UserInfo:
+            properties:
+              gender:
+                default: unknown
+                enum:
+                - male
+                - female
+                - unknown
+                title: Gender
+                type: string
+              name:
+                default: ''
+                title: Name
+                type: string
+            title: UserInfo
+            type: object
+        properties:
+          message:
+            default: ''
+            description: 二维码内容
+            title: Message
+            type: string
+          user_infos:
+            default: []
+            items:
+              $ref: '#/$defs/UserInfo'
+            title: User Infos
+            type: array
+        title: Model
+        type: object
+      parser_options:
+      - action: null
+        args:
+        - default: null
+          flags: null
+          name: message
+          value: str
+        compact: false
+        default: null
+        dest: null
+        help_text: 二维码内容
+        names:
+        - -m
+        - --message
+    default_texts: []
+    max_images: 1
+    max_texts: 1
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+weisuoyuwei:
+  date_created: '2021-12-24T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 为所欲为
+  params_type:
+    args_type: null
+    default_texts:
+    - 好啊
+    - 就算你是一流工程师
+    - 就算你出报告再完美
+    - 我叫你改报告你就要改
+    - 毕竟我是客户
+    - 客户了不起啊
+    - Sorry 客户真的了不起
+    - 以后叫他天天改报告
+    - 天天改 天天改
+    max_images: 0
+    max_texts: 9
+    min_images: 0
+    min_texts: 9
+  shortcuts: []
+  tags: []
+what_I_want_to_do:
+  date_created: '2023-07-19T00:00:00'
+  date_modified: '2023-07-19T00:00:00'
+  keywords:
+  - 我想上的
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+what_he_wants:
+  date_created: '2023-05-20T00:00:00'
+  date_modified: '2023-05-20T00:00:00'
+  keywords:
+  - 最想要的东西
+  params_type:
+    args_type: null
+    default_texts:
+    - 今年520
+    max_images: 1
+    max_texts: 1
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+why_at_me:
+  date_created: '2022-04-14T00:00:00'
+  date_modified: '2023-05-03T00:00:00'
+  keywords:
+  - 为什么@我
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags:
+  - 东方Project
+why_have_hands:
+  date_created: '2023-05-18T00:00:00'
+  date_modified: '2023-05-18T00:00:00'
+  keywords:
+  - 为什么要有手
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 1
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+windmill_turn:
+  date_created: '2022-12-13T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 风车转
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+wish_fail:
+  date_created: '2022-10-21T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 许愿失败
+  params_type:
+    args_type: null
+    default_texts:
+    - 我要对象
+    max_images: 0
+    max_texts: 1
+    min_images: 0
+    min_texts: 1
+  shortcuts: []
+  tags: []
+wooden_fish:
+  date_created: '2022-11-16T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 木鱼
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+worship:
+  date_created: '2022-02-10T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 膜
+  - 膜拜
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+wujing:
+  date_created: '2022-06-12T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 吴京中国
+  params_type:
+    args_type: null
+    default_texts:
+    - 不买华为不是
+    - 人
+    max_images: 0
+    max_texts: 2
+    min_images: 0
+    min_texts: 2
+  shortcuts:
+  - args:
+    - '{left}'
+    - '{right}'
+    humanized: 吴京xx中国xx
+    key: 吴京[\s:：]*(?P<left>\S*)中国(?P<right>\S*)
+  tags: []
+wunian:
+  date_created: '2021-12-24T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 五年怎么过的
+  params_type:
+    args_type: null
+    default_texts:
+    - 五年
+    - 你知道我这五年是怎么过的吗
+    - 我每天躲在家里玩贪玩蓝月
+    - 你知道有多好玩吗
+    max_images: 0
+    max_texts: 4
+    min_images: 0
+    min_texts: 4
+  shortcuts: []
+  tags: []
+wuyage:
+  date_created: '2024-12-05T00:00:00'
+  date_modified: '2024-12-05T00:00:00'
+  keywords:
+  - 乌鸦哥
+  params_type:
+    args_type: null
+    default_texts:
+    - 哟 云崽机器人
+    - 今天掉线了没
+    - 来给他弹个版本过低
+    max_images: 0
+    max_texts: 3
+    min_images: 0
+    min_texts: 3
+  shortcuts: []
+  tags: []
+yalidaye:
+  date_created: '2021-12-24T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 压力大爷
+  params_type:
+    args_type: null
+    default_texts:
+    - 外界都说我们压力大
+    - 我觉得吧压力也没有那么大
+    - 主要是28岁了还没媳妇儿
+    max_images: 0
+    max_texts: 3
+    min_images: 0
+    min_texts: 3
+  shortcuts: []
+  tags: []
+yeshu:
+  date_created: '2024-11-05T00:00:00'
+  date_modified: '2024-11-05T00:00:00'
+  keywords:
+  - 椰树椰汁
+  params_type:
+    args_type: null
+    default_texts:
+    - 椰子特产在海南
+    - 正宗
+    - 椰树
+    - 29年
+    - 坚持在海南岛
+    - 用新鲜椰子肉
+    - 鲜榨
+    - '不用椰浆
+
+      不加香精当生榨'
+    max_images: 0
+    max_texts: 8
+    min_images: 0
+    min_texts: 8
+  shortcuts: []
+  tags: []
+you_dont_get:
+  date_created: '2025-05-15T00:00:00'
+  date_modified: '2025-05-15T00:00:00'
+  keywords:
+  - 你不懂啦
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags:
+  - 咖波
+  - 猫猫虫
+you_should_call:
+  date_created: '2024-07-26T00:00:00'
+  date_modified: '2024-07-26T00:00:00'
+  keywords:
+  - 致电
+  - 你应该致电
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 1
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+your_new_years_eve:
+  date_created: '2024-12-31T00:00:00'
+  date_modified: '2024-12-31T00:00:00'
+  keywords:
+  - 你的跨年
+  params_type:
+    args_type: null
+    default_texts: []
+    max_images: 1
+    max_texts: 0
+    min_images: 1
+    min_texts: 0
+  shortcuts: []
+  tags: []
+youtube:
+  date_created: '2022-10-27T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - yt
+  - youtube
+  params_type:
+    args_type: null
+    default_texts:
+    - Porn
+    - Hub
+    max_images: 0
+    max_texts: 2
+    min_images: 0
+    min_texts: 2
+  shortcuts: []
+  tags: []
+zengxiaoxian:
+  date_created: '2021-12-24T00:00:00'
+  date_modified: '2023-02-14T00:00:00'
+  keywords:
+  - 曾小贤
+  params_type:
+    args_type: null
+    default_texts:
+    - 平时你打电子游戏吗
+    - 偶尔
+    - 星际还是魔兽
+    - 连连看
+    max_images: 0
+    max_texts: 4
+    min_images: 0
+    min_texts: 4
+  shortcuts: []
+  tags: []
