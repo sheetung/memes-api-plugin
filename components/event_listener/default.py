@@ -36,7 +36,7 @@ class DefaultEventListener(EventListener):
             # 合并所有普通文本部分
             message_text = ''.join(message_parts)
             # print(f'event={event_context.event}')
-            event_context.prevent_default()
+            # 移除prevent_default()，允许其他处理器也能处理消息
             # 如果用户输入包含[Image]标记，剔除它
             if '[Image]' in message_text:
                 message_text = message_text.replace('[Image]', '').strip()
@@ -231,6 +231,7 @@ class DefaultEventListener(EventListener):
                         platform_message.Image(base64=img_base64)
                     ])
                 )
+                event_context.prevent_default()
             except ValueError as e:
                 # 处理未找到表情包的情况
                 await event_context.reply(
