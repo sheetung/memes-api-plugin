@@ -4,7 +4,7 @@ metadata:
   author: sheetung
   name: meme-plugin-api
   repository: 'https://github.com/sheetung/memes-api-plugin'
-  version: 1.0.0
+  version: 1.1.0
   description:
     en_US: For LangBot meme generator plugin, API version
     zh_Hans: 用于LangBot表情包制作插件，api 版本
