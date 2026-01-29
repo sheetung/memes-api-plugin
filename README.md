@@ -1,83 +1,104 @@
 # memePlugin-api
 
-这是一个为 LangBot 开发的表情包插件，通过 API 调用远程的表情包生成服务。
+This is a meme plugin developed for LangBot, which generates memes by calling a remote meme generation service via API.
 
 
-## 安装方法
+## Installation
 
-### Docker 部署
+### Docker Deployment
 
-克隆本仓库
+Clone this repository
 
 ```bash
 git clone https://github.com/sheetung/meme-generator-extra-docker.git
 ```
 
-进入项目目录
+Enter the project directory
 
 ```bash
 cd memegeneratorextradocker
 ```
 
-通过命令 `docker compose up -d` 启动容器
+Start the container using `docker compose up -d`
 
-1. LangBot 通过本地或者非**docker**部署：
+1. LangBot deployed locally or **not via Docker**:
 
-运行后可通过 api 方式调用，一般无需修改插件的api url配置，如果docker部署与LangBot不在同一台机器上，需要修改插件的api url配置为docker容器的ip地址，默认端口为2233
+After running, it can be accessed via API. Generally, no modification to the plugin API URL configuration is required.  
+If the Docker deployment and LangBot are not on the same machine, you need to modify the plugin API URL to the Docker container's IP address.  
+The default port is `2233`.
 
-插件配置url中填写 `http://localhost:2233` 
+Set the plugin configuration URL to:
 
-2. LangBot 通过docker部署：
+```
+http://localhost:2233
+```
 
-需要将LangBot的docker网络与本插件的docker网络连接起来，在`docker-compose.yaml`中添加如下配置：（已默认添加）
+2. LangBot deployed via Docker:
 
-插件配置url中填写 `http://meme-generator:2233`
+You need to connect the Docker network of LangBot with the Docker network of this plugin.  
+Add the following configuration to `docker-compose.yaml` (already added by default):
 
+Set the plugin configuration URL to:
 
-#### 环境变量
-
-
-
-| 变量名               | 默认值              | 说明                    |
-| -------------------- | ------------------- | ----------------------- |
-| `MEME_DIRS`          | `'["/data/memes"]'` | 额外表情路径            |
-| `MEME_DISABLED_LIST` | `'[]'`              | 禁用表情列表            |
-| `GIF_MAX_SIZE`       | `10.0`              | 限制生成的 gif 文件大小 |
-| `GIF_MAX_FRAMES`     | `100`               | 限制生成的 gif 文件帧数 |
-| `BAIDU_TRANS_APPID`  | `''`                | 百度翻译 appid          |
-| `BAIDU_TRANS_APIKEY` | `''`                | 百度翻译 apikey         |
-| `LOG_LEVEL`          | `'INFO'`            | 日志等级                |
-
-## 使用方法
-
-在LangBot市场安装`meme-plugin-api`, 并配置好环境变量
-
-聊天中触发表情列表中的关键词生成表情包
-
-- 例如：
-  - 反了  --> 由QQ头像作为图片传入
-  - 反了 [此处有张图] --> 由消息中的图片作为图片传入
-
-### 表情列表
-
-请参考 [表情列表](https://github.com/MemeCrafters/meme-generator/wiki/%E8%A1%A8%E6%83%85%E5%88%97%E8%A1%A8) 查看所有支持的表情包关键词
-
-## 适配平台
-
-|    平台    | 状态 |  备注  |
-| :--------: | :--: | :----: |
-| OneBot V11 |  ✅   | Napcat |
-
-## 更新历史
-
-- v1.1.0 完善表情包信息处理机制
-- v1.0.0 修复重大BUG，发布第一个正式版本
-- v0.5.8 完善图片传入逻辑并简化插件体积
-- v0.2.4 修复传入文本或者图片的数量导致表情包生成出错的问题
-- v0.1.3 增加默认图片使用qq头像
-- v0.1.2 完善基础开发
+```
+http://meme-generator:2233
+```
 
 
-## 问题反馈及功能开发
+#### Environment Variables
 
-[![QQ群](https://img.shields.io/badge/QQ群-965312424-green)](https://qm.qq.com/cgi-bin/qm/qr?k=en97YqjfYaLpebd9Nn8gbSvxVrGdIXy2&jump_from=webapi&authKey=41BmkEjbGeJ81jJNdv7Bf5EDlmW8EHZeH7/nktkXYdLGpZ3ISOS7Ur4MKWXC7xIx)
+| Variable Name        | Default Value       | Description                     |
+| -------------------- | ------------------- | ------------------------------- |
+| `MEME_DIRS`          | `'["/data/memes"]'` | Additional meme directories     |
+| `MEME_DISABLED_LIST` | `'[]'`              | Disabled meme list              |
+| `GIF_MAX_SIZE`       | `10.0`              | Maximum generated GIF file size |
+| `GIF_MAX_FRAMES`     | `100`               | Maximum number of GIF frames    |
+| `BAIDU_TRANS_APPID`  | `''`                | Baidu Translate appid           |
+| `BAIDU_TRANS_APIKEY` | `''`                | Baidu Translate apikey          |
+| `LOG_LEVEL`          | `'INFO'`            | Log level                       |
+
+## Usage
+
+Install `meme-plugin-api` from the LangBot marketplace and configure the environment variables.
+
+Trigger meme generation in chat using keywords from the meme list.
+
+- Examples:
+  - 反了  --> Uses QQ avatar as the input image
+  - 反了 [an image here] --> Uses the image in the message as the input
+
+
+### Meme List
+
+Please refer to the following links to get meme information:
+
+- [Meme List 1](https://github.com/MemeCrafters/meme-generator/wiki/%E8%A1%A8%E6%83%85%E5%88%97%E8%A1%A8) 
+- [Meme List 2](https://github.com/anyliew/meme_emoji/wiki/%E8%A1%A8%E6%83%85%E5%88%97%E8%A1%A8)
+
+
+## Supported Platforms
+
+|  Platform  | Status | Remarks |
+| :--------: | :----: | :-----: |
+| OneBot V11 |   ✅    | Napcat  |
+
+## Changelog
+
+- v1.2.0: Added additional memes (Please update the usage in the Docker repository accordingly)
+- v1.1.0 Improved meme information handling mechanism  
+- v1.0.0 Fixed critical bugs and released the first stable version  
+- v0.5.8 Improved image input logic and reduced plugin size  
+- v0.2.4 Fixed issues caused by incorrect numbers of text or image inputs  
+- v0.1.3 Added default image using QQ avatar  
+- v0.1.2 Improved basic development
+
+
+## Meme-related Repositories
+
+- [meme-generator](https://github.com/MemeCrafters/meme-generator)
+- [meme_emoji](https://github.com/anyliew/meme_emoji)
+
+
+## Feedback & Feature Requests
+
+[![QQ Group](https://img.shields.io/badge/QQ%20Group-965312424-green)](https://qm.qq.com/cgi-bin/qm/qr?k=en97YqjfYaLpebd9Nn8gbSvxVrGdIXy2&jump_from=webapi&authKey=41BmkEjbGeJ81jJNdv7Bf5EDlmW8EHZeH7/nktkXYdLGpZ3ISOS7Ur4MKWXC7xIx)
